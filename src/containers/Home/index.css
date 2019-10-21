@@ -1,0 +1,41 @@
+.hero-container {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.hero-container img {
+  width: 70%;
+  margin-top: 50px;
+  border: 1px solid #766ca4;
+}
+
+.btn-container {
+  display: none;
+}
+
+.contact-btn {
+  font-size: 140%;
+  color: #fff;
+  text-decoration: none;
+  padding: 25px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: background-color 0.8s, color 0.5s;
+}
+
+.contact-btn:hover {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hero-container img {
+    display: none;
+  }
+
+  .btn-container {
+    display: flex;
+  }
+}

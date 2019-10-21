@@ -1,0 +1,131 @@
+.navigation {
+  background-color: #ffffff;
+}
+
+.navbar {
+  height: 85px;
+  padding: 0;
+}
+
+.navbar .navbar-brand {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  margin-right: 0px;
+}
+
+.navbar .navbar-brand img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.navbar .navbar-nav a {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #454545;
+  transition: all 400ms linear 0s;
+}
+
+.navbar .navbar-nav a.active,
+.navbar .navbar-nav a:hover {
+  color: #766ca4;
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #766ca4;
+  transition: all 400ms linear 0s;
+}
+
+.navbar .navbar-nav a.active::after,
+.navbar .navbar-nav a:hover::after {
+  width: 24px;
+}
+
+.navbar .navbar-nav.mr-auto a {
+  margin-right: 30px;
+}
+
+.navbar .navbar-nav.mr-auto a:last-child {
+  margin-right: 0px;
+}
+
+.navbar .navbar-nav.right-align a {
+  margin-left: 30px;
+}
+
+.navbar .navbar-nav.mr-auto a:first-child {
+  margin-left: 0px;
+}
+
+/* .navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav a {
+  color: #000000;
+}
+
+.navbar-nav a:hover {
+  text-decoration: none;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: rgba(255, 255, 255, 0.95);
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  .navbar-nav a {
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 13px;
+    margin-top: 5px;
+  }
+  .navbar-nav a:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .brand {
+    position: absolute;
+    z-index: 9999;
+    left: 10px;
+    top: 17px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav a {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .navbar-nav a:hover {
+    color: #766ca4;
+  }
+
+  .brand {
+    display: none;
+  }
+} */
