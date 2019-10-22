@@ -1,12 +1,16 @@
 .header {
+  background-color: #766ca4;
+  color: #454545;
+  height: 50px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
 }
 
-.header-img img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.header .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-right {
+  margin-left: auto;
 }
