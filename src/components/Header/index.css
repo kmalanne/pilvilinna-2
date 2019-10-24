@@ -1,9 +1,10 @@
 .header {
   background-color: #766ca4;
-  color: #454545;
   height: 50px;
   display: flex;
   align-items: center;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .header .container {
@@ -11,6 +12,67 @@
   flex-direction: row;
 }
 
+.header .container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-left svg {
+  margin-right: 10px;
+}
+
+.header-left a:last-child {
+  margin-left: 30px;
+}
+
 .header-right {
   margin-left: auto;
+}
+
+.header-right svg {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 100px;
+  }
+
+  .header .container {
+    flex-direction: column;
+  }
+
+  .header-left,
+  .header-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .header-right {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    height: 130px;
+  }
+
+  .header-left,
+  .header-right {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
