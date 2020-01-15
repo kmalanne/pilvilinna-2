@@ -1,9 +1,17 @@
 import React from 'react';
-import hero from '../../resources/hero.jpg';
+import { Jumbotron } from 'react-bootstrap';
 import './index.css';
 
 export const Home = () => (
   <div className="home">
-    <h1>Etusivu</h1>
+    <Jumbotron>
+      <h1>Herkkuja Pilvilinnasta</h1>
+      <p>Makeat ja suolaiset tarjoiltavat tilauksesta</p>
+      <p>
+        <a className="pill-btn" href="contact">
+          Ota yhteyttä
+        </a>
+      </p>
+    </Jumbotron>
   </div>
 );

@@ -1,0 +1,28 @@
+.footer .container {
+  padding: 30px 50px;
+}
+
+.footer .row .col,
+.footer .row .col-sm {
+  text-align: center;
+}
+
+.footer .row a {
+  color: #454545;
+  text-decoration: none;
+}
+
+.footer .col-header {
+  font-weight: 600;
+}
+
+.footer .social-media-col a {
+  margin-left: 10px;
+  line-height: 24px;
+}
+
+@media (max-width: 576px) {
+  .footer .row .col-sm {
+    margin-bottom: 15px;
+  }
+}

@@ -9,7 +9,7 @@ export const Navigation: React.FC = () => {
   const [expanded, setExpanded] = React.useState(false);
 
   const onToggle = () => {
-    if (window.innerWidth <= 767) {
+    if (window.innerWidth <= 999) {
       setExpanded(!expanded);
     }
   };
@@ -30,7 +30,7 @@ export const Navigation: React.FC = () => {
           collapseOnSelect
           expanded={expanded}
           onToggle={onToggle}
-          expand="md"
+          expand="lg"
         >
           <Navbar.Brand>
             <img src={logo} alt="logo" />

@@ -1,12 +1,9 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebookSquare,
-  faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
-import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './index.css';
 import { Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { SocialMediaLinkGroup } from '../SocialMediaLinkGroup';
+import './index.css';
 
 const phoneNumber = process.env.REACT_APP_PHONE_NUMBER;
 const phoneNumberDisplay = process.env.REACT_APP_PHONE_NUMBER_DISPLAY;
@@ -26,15 +23,7 @@ export const Header: React.FC = () => {
           </a>
         </div>
         <div className="header-right">
-          <a href="https://www.facebook.com/Pilvilinnan-leipomo-1541890192566923/">
-            <FontAwesomeIcon
-              icon={faFacebookSquare}
-              size="lg"
-            ></FontAwesomeIcon>
-          </a>
-          <a href="https://www.instagram.com/pilvilinnan_anna/">
-            <FontAwesomeIcon icon={faInstagram} size="lg"></FontAwesomeIcon>
-          </a>
+          <SocialMediaLinkGroup></SocialMediaLinkGroup>
         </div>
       </Container>
     </div>

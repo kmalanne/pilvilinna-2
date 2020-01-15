@@ -1,41 +1,39 @@
-.hero-container {
-  position: relative;
+.home .jumbotron {
+  background-image: url('../../resources/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 8rem 2rem;
+  border-radius: 0px;
+}
+
+.home .jumbotron .pill-btn {
+  text-decoration: none;
+  color: #454545;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 30px;
+  line-height: 32px;
+  height: auto;
+  display: inline-block;
   text-align: center;
-  vertical-align: middle;
+  background-color: #dddddd;
+  border-radius: 23px;
 }
 
-.hero-container img {
-  width: 70%;
-  margin-top: 50px;
-  border: 1px solid #766ca4;
+.home .jumbotron .pill-btn:hover {
+  color: #dddddd;
+  background-color: #454545;
+  transition: all 300ms linear !important;
 }
 
-.btn-container {
-  display: none;
-}
-
-.contact-btn {
-  font-size: 140%;
-  color: #fff;
-  text-decoration: none;
-  padding: 25px 40px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  transition: background-color 0.8s, color 0.5s;
-}
-
-.contact-btn:hover {
-  color: rgba(0, 0, 0, 0.9);
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-}
-
-@media (max-width: 768px) {
-  .hero-container img {
-    display: none;
+@media (min-width: 800px) {
+  .home .jumbotron {
+    padding: 14rem 2rem;
   }
+}
 
-  .btn-container {
-    display: flex;
+@media (min-width: 1000px) {
+  .home .jumbotron {
+    padding: 18rem 2rem;
   }
 }
