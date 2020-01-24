@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import './index.css';
@@ -6,7 +6,29 @@ import { routePaths } from '../../utils/routePaths';
 import logo from '../../resources/logo.jpg';
 
 export const Navigation: React.FC = () => {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const containerRef = useRef<HTMLDivElement>();
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
+  const handleScroll = () => {
+    const element = containerRef ? containerRef.current : undefined;
+
+    if (!element) {
+      return;
+    }
+
+    if (window.pageYOffset > element.offsetTop) {
+      element.classList.add('sticky');
+    } else {
+      element.classList.remove('sticky');
+    }
+  };
 
   const onToggle = () => {
     if (window.innerWidth <= 999) {
@@ -24,7 +46,7 @@ export const Navigation: React.FC = () => {
   } = routePaths;
 
   return (
-    <div className="navigation">
+    <div className="navigation" ref={containerRef as any}>
       <Container>
         <Navbar
           collapseOnSelect

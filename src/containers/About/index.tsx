@@ -1,8 +1,9 @@
 import React from 'react';
+import { Banner } from '../../components/Banner';
 import './index.css';
 
 export const About = () => (
   <div className="about">
-    <h1>Leipomosta</h1>
+    <Banner imgUrl="/images/banner-1.jpg" text="Leipomo"></Banner>>
   </div>
 );

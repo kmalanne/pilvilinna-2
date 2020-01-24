@@ -1,0 +1,14 @@
+.banner-jumbotron {
+  background-size: cover;
+  background-position: center top;
+  padding: 8rem 2rem;
+  border-radius: 0px;
+  opacity: 0.8;
+}
+
+.banner-jumbotron h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}

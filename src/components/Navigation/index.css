@@ -1,5 +1,6 @@
 .navigation {
   background-color: #ffffff;
+  z-index: 10;
 }
 
 .navbar {
@@ -13,12 +14,14 @@
   top: 0px;
   transform: translateX(-50%);
   margin-right: 0px;
+  z-index: 30;
 }
 
 .navbar .navbar-brand img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
+  box-shadow: 0 5px 2px -2px grey;
 }
 
 .navbar .navbar-nav a {
@@ -80,6 +83,7 @@
 
 .navbar .navbar-collapse {
   background-color: #ffffff;
+  z-index: 20;
 }
 
 @media (max-width: 1000px) {
