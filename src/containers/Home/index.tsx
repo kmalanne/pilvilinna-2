@@ -1,5 +1,11 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Col, Container, Jumbotron, Row } from 'react-bootstrap';
+import {
+  faBirthdayCake,
+  faCookie,
+  faBreadSlice,
+} from '@fortawesome/free-solid-svg-icons';
+import { ServiceItem } from '../../components/ServiceItem';
 import './index.css';
 
 export const Home = () => (
@@ -13,5 +19,39 @@ export const Home = () => (
         </a>
       </p>
     </Jumbotron>
+    <Container className="service-container">
+      <Row className="service-title">
+        <h2>Palvelumme</h2>
+      </Row>
+      <Row>
+        <Col>
+          <ServiceItem
+            icon={faBirthdayCake}
+            title={'Kakut'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            }
+          ></ServiceItem>
+        </Col>
+        <Col>
+          <ServiceItem
+            icon={faBreadSlice}
+            title={'Suolaiset'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            }
+          ></ServiceItem>
+        </Col>
+        <Col>
+          <ServiceItem
+            icon={faCookie}
+            title={'Muut herkut'}
+            text={
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            }
+          ></ServiceItem>
+        </Col>
+      </Row>
+    </Container>
   </div>
 );

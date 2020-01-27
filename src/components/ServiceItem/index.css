@@ -1,0 +1,12 @@
+.service-item h4 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-item p {
+  font-size: 18px;
+  line-height: 26px;
+  padding-right: 40px;
+}

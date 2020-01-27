@@ -83,7 +83,7 @@ export const Navigation: React.FC = () => {
                 onClick={onToggle}
                 to={ASSORTMENT}
               >
-                Menu
+                Valikoima
               </NavLink>
             </Nav>
             <Nav className="right-align">

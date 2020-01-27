@@ -37,3 +37,23 @@
     padding: 18rem 2rem;
   }
 }
+
+.service-container {
+  background-color: #fff;
+  padding: 6rem;
+}
+
+.service-title {
+  margin-bottom: 4rem;
+}
+
+.service-title.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
