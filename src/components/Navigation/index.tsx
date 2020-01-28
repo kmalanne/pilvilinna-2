@@ -69,21 +69,21 @@ export const Navigation: React.FC = () => {
               >
                 Etusivu
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 className="normal"
                 activeClassName="active"
                 onClick={onToggle}
                 to={ABOUT}
               >
                 Leipomo
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 className="normal"
                 activeClassName="active"
                 onClick={onToggle}
                 to={ASSORTMENT}
               >
-                Valikoima
+                Valikoima ja hinnasto
               </NavLink>
             </Nav>
             <Nav className="right-align">

@@ -3,7 +3,8 @@ import { Banner } from '../../components/Banner';
 import './index.css';
 
 export const Assortment = () => (
-  <div className="assortment">
-    <Banner imgUrl="/images/banner-4.jpg" text="Valikoima"></Banner>>
+  <div className="content assortment">
+    <Banner imgUrl="/images/banner-1.jpg" text="Valikoima ja hinnasto"></Banner>
+    >
   </div>
 );

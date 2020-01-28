@@ -9,7 +9,7 @@ import { ServiceItem } from '../../components/ServiceItem';
 import './index.css';
 
 export const Home = () => (
-  <div className="home">
+  <div className="content home">
     <Jumbotron>
       <h1>Herkkuja Pilvilinnasta</h1>
       <p>Makeat ja suolaiset tarjoiltavat tilauksesta</p>

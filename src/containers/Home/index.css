@@ -1,8 +1,9 @@
 .home .jumbotron {
+  padding: 8rem 2rem;
+  margin-bottom: 0px;
   background-image: url('../../resources/hero.jpg');
   background-size: cover;
   background-position: center center;
-  padding: 8rem 2rem;
   border-radius: 0px;
 }
 
@@ -35,6 +36,7 @@
 @media (min-width: 1000px) {
   .home .jumbotron {
     padding: 18rem 2rem;
+    height: calc(100vh - 85px);
   }
 }
 
@@ -56,4 +58,5 @@
 .service-title h2 {
   font-size: 36px;
   font-weight: bold;
+  border-bottom: 2px solid #000000;
 }
