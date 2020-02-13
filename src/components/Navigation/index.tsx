@@ -37,7 +37,7 @@ export const Navigation: React.FC = () => {
   };
 
   const {
-    ABOUT,
+    // ABOUT,
     ASSORTMENT,
     CONTACT,
     HOME,

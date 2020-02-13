@@ -1,0 +1,23 @@
+.assortment .container {
+  padding: 90px;
+}
+
+.assortment h4 {
+  margin-bottom: 20px;
+}
+
+.assortment p,
+.assortment li {
+  font-size: 18px;
+}
+
+.assortment p.paragraph-header {
+  font-size: 22px;
+}
+
+@media (max-width: 575px) {
+  .assortment .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

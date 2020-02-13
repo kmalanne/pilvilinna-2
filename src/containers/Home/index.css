@@ -40,6 +40,47 @@
   }
 }
 
+.baker-info-container {
+  padding: 6rem;
+}
+
+.baker-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baker-img-container img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.baker-info-text-container {
+  margin: auto;
+  font-size: 130%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.baker-info-text-container .baker-signature {
+  margin-top: 10px;
+  font-size: 130%;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .baker-info-text-container {
+    margin: 50px auto auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .baker-info-text-container {
+    font-size: 17px;
+  }
+}
+
 .service-container {
   background-color: #fff;
   padding: 6rem;
@@ -57,6 +98,4 @@
 
 .service-title h2 {
   font-size: 36px;
-  font-weight: bold;
-  border-bottom: 2px solid #000000;
 }
