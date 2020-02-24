@@ -99,3 +99,8 @@
 .service-title h2 {
   font-size: 36px;
 }
+
+.carousel-container {
+  padding-right: 0px;
+  padding-left: 0px;
+}

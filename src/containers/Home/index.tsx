@@ -5,6 +5,7 @@ import {
   faCookie,
   faBreadSlice,
 } from '@fortawesome/free-solid-svg-icons';
+import { Carousel } from '../../components/Carousel';
 import { ServiceItem } from '../../components/ServiceItem';
 import bakerImage from '../../resources/anna.jpg';
 import './index.css';
@@ -72,6 +73,25 @@ export const Home = () => (
           ></ServiceItem>
         </Col>
       </Row>
+    </Container>
+    <Container className="carousel-container">
+      <Carousel
+        items={[
+          {
+            text:
+              'Hurmaavia ja herkullisia kakkuja kaikenlaisiin juhliin. Kokemuksella voin antaa vilpittömän suosituksen Pilvilinnan leipomolle &#128522;',
+            author: '- Asiakas 1',
+          },
+          {
+            text: 'Hyvä työnjälki. Saatiin mitä piti ja enemmänkin.',
+            author: '- Asiakas 2',
+          },
+          {
+            text: 'On kyllä hyvät ja maukkaat tuotteet - suosittelen!',
+            author: '- Asiakas 3',
+          },
+        ]}
+      ></Carousel>
     </Container>
   </div>
 );
