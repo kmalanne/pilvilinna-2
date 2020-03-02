@@ -34,7 +34,7 @@ export const Carousel: React.FC<ICarouselProps> = (props: ICarouselProps) => {
   const { items } = props;
 
   React.useEffect(() => {
-    const timer = setTimeout(onNextClick, 50000000);
+    const timer = setTimeout(onNextClick, 5000);
 
     return () => {
       clearTimeout(timer);
@@ -62,8 +62,12 @@ export const Carousel: React.FC<ICarouselProps> = (props: ICarouselProps) => {
         );
       })}
       <div className="carousel-action">
-        <div className="prev" onClick={onPrevClick}></div>
-        <div className="next" onClick={onNextClick}></div>
+        <div className="prev" onClick={onPrevClick}>
+          {'<'}
+        </div>
+        <div className="next" onClick={onNextClick}>
+          {'>'}
+        </div>
       </div>
     </div>
   );
