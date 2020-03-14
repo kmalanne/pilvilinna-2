@@ -1,7 +1,75 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Banner } from '../../components/Banner';
+import { Gallery } from '../../components/Gallery';
 import './index.css';
+
+const images = [
+  {
+    previewURL: '/images/pilvilinnanleipomo-1.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-1.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-2.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-2.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-3.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-3.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-4.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-4.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-5.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-5.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-6.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-6.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-7.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-7.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-8.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-8.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-9.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-9.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-10.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-10.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-11.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-11.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-12.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-12.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-13.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-13.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-14.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-14.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-15.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-15.jpg',
+  },
+  {
+    previewURL: '/images/pilvilinnanleipomo-16.jpg',
+    thumbnailURL: '/images/pilvilinnanleipomo-16.jpg',
+  },
+];
 
 export const Assortment = () => (
   <div className="content assortment">
@@ -149,6 +217,7 @@ export const Assortment = () => (
       </p>
       <p>Teen myös muita makeita ja suolaisia leivonnaisia, kysy tarjousta!</p>
     </Container>
+    <Gallery images={images}></Gallery>
     <div style={{ backgroundColor: 'red' }}>Kakkugalleria</div>
   </div>
 );
