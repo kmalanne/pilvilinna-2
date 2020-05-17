@@ -13,7 +13,7 @@ export const OrderingAndDelivering = () => (
       text="Tilaus- ja toimitusehdot"
     ></Banner>
     <Container>
-      <p className="paragraph-header">Tilaus- ja toimitusehdot:</p>
+      <h3>Tilaus- ja toimitusehdot:</h3>
       <p>
         Tuotteet valmistetaan aina laktoosittomista raaka-aineista
         mahdollisuuksia mukaan, mutta osa esim. täytekakun täytteistä sisältää

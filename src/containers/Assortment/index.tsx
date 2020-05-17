@@ -75,11 +75,15 @@ export const Assortment = () => (
   <div className="content assortment">
     <Banner imgUrl="/images/banner-1.jpg" text="Valikoima ja hinnasto"></Banner>
     <Container>
-      <h4>
+      <h3>
         VALIKOIMA JA HINNASTO (alkaen 1.1.2020), kaikki hinnat sisältävät alv
         14%
-      </h4>
-      <p className="paragraph-header">Uniikit täytekakut</p>
+      </h3>
+      <div className="item-header">
+        <p>
+          Uniikit täytekakut <span>alk. 65€</span>
+        </p>
+      </div>
       <p>
         Täytekakut valmistetaan käsityönä asiakkaan toiveiden mukaan. Kakuissa
         on täytteenä runsaat rahka- tai tuorejuustopohjaiset liivatteella
@@ -129,9 +133,11 @@ export const Assortment = () => (
           suklaa ja 1- 2 täytettä toiveidesi mukaan)
         </li>
       </ul>
-      <p className="paragraph-header">
-        Kreemikakut alk. <strong>65€</strong>
-      </p>
+      <div className="item-header">
+        <p>
+          Kreemikakut <span>alk. 65€</span>
+        </p>
+      </div>
       <p>
         Tiivispohjainen täytekakku, jonka välissä ja kuorrutteena maustettu
         voipohjainen kreemi
@@ -141,17 +147,24 @@ export const Assortment = () => (
         <li>vadelma-timjami</li>
         <li>porkkana</li>
       </ul>
-      <p className="paragraph-header">
-        Keksipohjaiset moussekakut alk. <strong>45€</strong>
-      </p>
+      <div className="item-header">
+        <p>
+          Keksipohjaiset moussekakut <span>alk. 45€</span>
+        </p>
+      </div>
       <p>
         Tehdään halkaisijaltaan 24cm vuokaan, riittävyys noin 12-15 h.
-        Halutessasi voit vaihtaa keksipohjan mutakakkupohjaan +5€
+        Halutessasi voit vaihtaa keksipohjan mutakakkupohjaan{' '}
+        <strong>+5€</strong>
       </p>
-      <p className="paragraph-header">Kuppikakut/ minikuppikakut</p>
+      <div className="item-header">
+        <p>
+          Kuppikakut / minikuppikakut <span>45€</span>
+        </p>
+      </div>
       <p>
-        Minimitilaus 12 kpl normaali / 24 kpl mini <strong>45€</strong>, teeman
-        mukainen koristelu <strong>+5€</strong>
+        Minimitilaus 12 kpl normaali / 24 kpl mini, teeman mukainen koristelu{' '}
+        <strong>+5€</strong>
       </p>
       <ul>
         <li>vadelma-valkosuklaa</li>
@@ -161,25 +174,31 @@ export const Assortment = () => (
         <li>mustikka-sitruuna</li>
         <li>banaani-kinuski</li>
       </ul>
-      <p className="paragraph-header">
-        Pilvet (maustetut isot marengit) <strong>0,75€</strong> kpl
-      </p>
+      <div className="item-header">
+        <p>
+          Pilvet (maustetut isot marengit) <span>0,75€/kpl</span>
+        </p>
+      </div>
       <ul>
         <li>tumma suklaa</li>
         <li>mokka-suklaa</li>
         <li>piparminttu-suklaa</li>
         <li>turkinpippuri</li>
       </ul>
-      <p className="paragraph-header">
-        Cookiet <strong>1,00€</strong> kpl
-      </p>
+      <div className="item-header">
+        <p>
+          Cookiet <span>1,00€/kpl</span>
+        </p>
+      </div>
       <ul>
         <li>suklaahippu</li>
         <li>suklaa</li>
       </ul>
-      <p className="paragraph-header">
-        Macarons <strong>1,30€</strong> kpl
-      </p>
+      <div className="item-header">
+        <p>
+          Macarons <span>1,30€/kpl</span>
+        </p>
+      </div>
       <p>Minimitilaus 20 kpl per väri/maku</p>
       <ul>
         <li>sitruuna</li>
@@ -189,7 +208,11 @@ export const Assortment = () => (
         <li>mustaherukka</li>
         <li>suklaa</li>
       </ul>
-      <p className="paragraph-header">Voileipäkakut</p>
+      <div className="item-header">
+        <p>
+          Voileipäkakut <span>alk. 90€</span>
+        </p>
+      </div>
       <p>
         Voileipäkakut valmistetaan itsetehtyyn leipään, halkaisija noin 25cm,
         riittävyys 20-25 h
@@ -217,7 +240,8 @@ export const Assortment = () => (
       </p>
       <p>Teen myös muita makeita ja suolaisia leivonnaisia, kysy tarjousta!</p>
     </Container>
-    <Gallery images={images}></Gallery>
-    <div style={{ backgroundColor: 'red' }}>Kakkugalleria</div>
+    <Container className="gallery-container">
+      <Gallery images={images}></Gallery>
+    </Container>
   </div>
 );

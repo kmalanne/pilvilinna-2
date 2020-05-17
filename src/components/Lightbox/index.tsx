@@ -8,8 +8,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import './index.css';
 import { Image as LightboxImage, IImageProps } from '../Image';
-// import { Icon } from '../Icon';
-// import { ICONS } from '../../utils/constants';
 
 export interface ILightboxProps {
   currentImage: number;
@@ -78,6 +76,10 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
       if (image) {
         setIsImageLoaded(image.complete);
       }
+    }
+
+    if (currentImage === 0 && previousImage === 0) {
+      setIsImageLoaded(true);
     }
   }, [currentImage, images, previousImage]);
 
@@ -202,7 +204,6 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
         onClick={prevImage}
       >
         <FontAwesomeIcon icon={faChevronLeft} size="2x"></FontAwesomeIcon>
-        {/* <Icon icon={ICONS.ARROW_LEFT} size={72} /> */}
       </button>
     );
   };
@@ -219,7 +220,6 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
         onClick={nextImage}
       >
         <FontAwesomeIcon icon={faChevronRight} size="2x"></FontAwesomeIcon>
-        {/* <Icon icon={ICONS.ARROW_RIGHT} size={72} /> */}
       </button>
     );
   };
@@ -234,7 +234,6 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
         >
           <span className="lightbox-close-text">Close</span>
           <FontAwesomeIcon icon={faTimes} size="2x" inverse></FontAwesomeIcon>
-          {/* <Icon icon={ICONS.CLOSE} /> */}
         </button>
         <div className="lightbox-content">{renderImage()}</div>
         {isImageLoaded && renderPrevArrow()}

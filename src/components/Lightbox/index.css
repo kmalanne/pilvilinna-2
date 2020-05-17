@@ -57,10 +57,12 @@
   position: absolute;
   top: 48%;
   left: 10px;
+  color: #ffffff;
 }
 
 .lightbox-button-next {
   position: absolute;
   top: 48%;
   right: 10px;
+  color: #ffffff;
 }

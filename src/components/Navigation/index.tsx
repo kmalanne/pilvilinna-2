@@ -42,7 +42,7 @@ export const Navigation: React.FC = () => {
     CONTACT,
     HOME,
     ORDERING,
-    SOCIAL_MEDIA,
+    // SOCIAL_MEDIA,
   } = routePaths;
 
   return (
@@ -103,14 +103,15 @@ export const Navigation: React.FC = () => {
               >
                 Ota yhteyttä
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 className="normal"
                 activeClassName="active"
                 onClick={onToggle}
-                to={SOCIAL_MEDIA}
+                to={'SOCIAL_MEDIA'}
               >
-                Blogi
-              </NavLink>
+                Some
+              </NavLink> */}
+              <a href="http://annaj-sukkiajasuklaata.blogspot.com/">Blogi</a>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

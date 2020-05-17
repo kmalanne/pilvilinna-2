@@ -12,53 +12,6 @@ export const Gallery: React.FC<IGalleryProps> = (props: IGalleryProps) => {
 
   const [currentImage, setCurrentImage] = useState(-1);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  // fetchImages = async (): Promise<void> => {
-  //   this.setState({ loading: true });
-
-  //   const { images, lastId } = this.state;
-
-  //   try {
-  //     let albumId = this.state.albumId;
-  //     if (albumId === 0) {
-  //       albumId = await this.fetchAlbum();
-  //     }
-
-  //     const response: any = await fetch(
-  //       `${process.env.REACT_APP_API_URL}/albums/${albumId}/images?cursor=${lastId}&limit=${LIMIT}`
-  //     );
-  //     const json = await response.json();
-
-  //     const nextImages = json.map((image: ImageProps, index: number) => ({
-  //       className: this.getImageClass(index),
-  //       id: images.length + index,
-  //       thumbnailURL: image.thumbnailURL,
-  //       previewURL: image.previewURL,
-  //     }));
-
-  //     this.setState({
-  //       hasMore: nextImages.length === LIMIT,
-  //       lastId: json[json.length - 1].id,
-  //       loading: false,
-  //       images: [...images, ...nextImages],
-  //     });
-  //   } catch (error) {
-  //     this.setState({ error: error.message, loading: false });
-  //   }
-  // };
-
-  // getImageClass = (index: number) => {
-  //   if (this.state.images.length < 20) {
-  //     return 'gallery-image';
-  //   }
-
-  //   const style =
-  //     styleClasses[Math.floor(Math.random() * Math.floor(styleClasses.length))];
-
-  //   return classNames([
-  //     ['gallery-image', true],
-  //     [style, index !== 0 && index % 4 === 0 && true],
-  //   ]);
-  // };
 
   const nextImage = () => {
     setCurrentImage(currentImage + 1);

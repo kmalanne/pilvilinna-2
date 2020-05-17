@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Image, Jumbotron, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import {
   faBirthdayCake,
   faCookie,
@@ -8,6 +9,7 @@ import {
 import { Carousel } from '../../components/Carousel';
 import { ServiceItem } from '../../components/ServiceItem';
 import bakerImage from '../../resources/anna.jpg';
+import { routePaths } from '../../utils/routePaths';
 import './index.css';
 
 export const Home = () => (
@@ -15,11 +17,9 @@ export const Home = () => (
     <Jumbotron>
       <h1>Pilvilinnan leipomo</h1>
       <p>Hyvää mieltä ja herkullisia hetkiä</p>
-      <p>
-        <a className="pill-btn" href="contact">
-          Ota yhteyttä
-        </a>
-      </p>
+      <NavLink className="pill-btn" to={routePaths.CONTACT}>
+        Ota yhteyttä
+      </NavLink>
     </Jumbotron>
     <Container className="baker-info-container">
       <Row>
