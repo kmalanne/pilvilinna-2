@@ -16,7 +16,7 @@ export const Home = () => (
   <div className="content home">
     <Jumbotron>
       <h1>Pilvilinnan leipomo</h1>
-      <p>Hyvää mieltä ja herkullisia hetkiä</p>
+      <p>Unelmia ja haaveita, jotka maistuvat makealta.</p>
       <NavLink className="pill-btn" to={routePaths.CONTACT}>
         Ota yhteyttä
       </NavLink>
@@ -28,15 +28,26 @@ export const Home = () => (
         </Col>
         <Col className="baker-info-text-container" lg={6} md={12}>
           <p>
-            Rakkaudesta leivonnaisiin, herkullisiin hetkiin ja juhliin. Olen
-            itseoppinut leipuri, joka syksyllä 2018 teki loikan makeaan
-            tuntemattomaan ja ryhtyi yrittäjäksi, kakkuleipuriksi ja
-            juhlasuunnittelijaksi. Olen aina halunnut ilahduttaa muita ja leivon
-            niin makeat kuin suolaiset leivonnaiset suurella sydämellä.
-            Leivonnaisten maku on itselleni se tärkein tekijä ja erityisen
-            paljon olen saanut positiivista palautetta juuri kakkujeni mausta.
-            Aitoja makuja, ei liian makeaa ja juuri sopivan kosteaa. Siinä
-            reseptini täydelliseen kakkuun.
+            Juhlat tulossa? Vievätkö arjen kiireet mennessään tai tunnetko
+            epävarmuutta leipojana? Haluatko, että juhlasi tarjottavat ovat
+            maukkaita ja kauniita katsoa? Silloin kannattaa ottaa yhteyttä
+            Pilvilinnan leipomoon. Maailmanlaajuisen kakkutrendin luojana
+            loihdin sinun kakku- ja muut tarjoilutoiveet todeksi. Leipomoni on
+            erikoistunut pieniin perhejuhliin kuten ristiäiset, syntymäpäivät,
+            rippijuhlat ja valmistujaiset. Näihin juhliin voit tilata minulta
+            joko pelkästään kakun tai kaikki kahvipöydän tarjottavat.
+            Leivonnaiset toteutetaan aina yksilöllisesti toiveiden mukaan. Voit
+            kysyä minulta apuja myös muihin juhlajärjestelyihin, jolloin sinun
+            tehtäväksesi jää vain juhlista nauttiminen.
+          </p>
+          <p>
+            {' '}
+            Juuri halu tehdä asiakkaiden makeista unelmista totta johti
+            siirtymään harrastelijasta yrittäjäksi 2018. Itse oppineena
+            leipurina leivon tilauksesta aina suurella sydämellä ja erityisesti
+            makuun panostaen, ulkonäköä kuitenkaan unohtamatta. Aitoja makuja,
+            ei liian makeaa ja sopivan kosteaa, siinä reseptini täydelliseen
+            kakkuun. Hyvää mieltä ja herkullisia hetkiä sinulle toivoen
           </p>
           <p className="baker-signature">Pilvilinnan Anna</p>
         </Col>
@@ -51,9 +62,7 @@ export const Home = () => (
           <ServiceItem
             icon={faBirthdayCake}
             title={'Kakut'}
-            text={
-              'Täytekakut, kreemikakut ja moussekakut haluamillasi koristeluilla.'
-            }
+            text={'Täytekakut ja moussekakut haluamillasi koristeluilla.'}
           ></ServiceItem>
         </Col>
         <Col sm={12} md={4}>

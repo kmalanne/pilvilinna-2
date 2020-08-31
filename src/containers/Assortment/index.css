@@ -33,6 +33,14 @@
   font-size: 20px;
 }
 
+.assortment .info-text-container {
+  margin-top: 40px;
+}
+
+.assortment .info-text-container p {
+  font-size: 18px;
+}
+
 @media (max-width: 575px) {
   .assortment .container {
     padding-left: 30px;
