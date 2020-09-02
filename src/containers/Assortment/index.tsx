@@ -94,20 +94,15 @@ export const Assortment = () => (
       </p>
       <ul>
         <li>
-          noin 10 h (halkaisija 15cm) alk. <strong>70,00€</strong>
+          noin 10 h (halkaisija 15cm) <strong>70,00€</strong>
         </li>
         <li>
-          noin 20 h (halkaisija 23cm) alk. <strong>90,00€</strong>
+          noin 20 h (halkaisija 23cm) <strong>90,00€</strong>
         </li>
         <li>
-          noin 30 h (halkaisija 25cm) alk. <strong>120,00€</strong>
+          noin 30 h (halkaisija 25cm) <strong>120,00€</strong>
         </li>
       </ul>
-      <p>
-        Lopullisen hinnan kakullesi saat, kun tiedän toiveesi. Aikaa vievät
-        sokerimassakoristeet taikka muuten runsaat koristelut (esim. runsaasti
-        aitoja kukkia) nostavat kakun hintaa.
-      </p>
       <p>
         Kakkumenu (suosituimmiksi nousseet yhdistelmät valintaasi helpottamaan):
       </p>
