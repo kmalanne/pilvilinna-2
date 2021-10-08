@@ -100,7 +100,7 @@ export const Assortment = () => (
           18-20 henkeä <strong>100,00€</strong>
         </li>
         <li>
-          n. 25 henkeä <strong>125,00€</strong>
+          25-30 henkeä <strong>125,00€</strong>
         </li>
       </ul>
       <p>
