@@ -88,16 +88,22 @@ export const Home = () => (
         items={[
           {
             text:
-              'Hurmaavia ja herkullisia kakkuja kaikenlaisiin juhliin. Kokemuksella voin antaa vilpittömän suosituksen Pilvilinnan leipomolle &#128522;',
-            author: '- Asiakas 1',
+              'Hymyilevää ja mutkatonta palvelua, maistuvia ja kauniita kakkuja. Mikroyrityksen vaivattomuus ja persoonallisuus, rakastan! Luottoleipurini, Pilvilinnan Anna ️Kiitos!',
+            author: 'Essi, Tampere',
           },
           {
-            text: 'Hyvä työnjälki. Saatiin mitä piti ja enemmänkin.',
-            author: '- Asiakas 2',
+            text:
+              'Pilvilinnan leipomon kakut ovat tehneet oikeutta meidän perheen juhliin. Maistuvat ja todella kauniit kakut ovat juhlapöydän kruunu.',
+            author: 'Mari, Ylöjärvi',
           },
           {
-            text: 'On kyllä hyvät ja maukkaat tuotteet - suosittelen!',
-            author: '- Asiakas 3',
+            text: 'Upeita ja super herkullisia kakkuja mukavalta leipurilta!',
+            author: 'Sanna, Pirkkala',
+          },
+          {
+            text:
+              'Voimme suositella Pilvilinnan leipomoa lämpimästi! Ristiäiskakkumme sai paljon kehuja - kakku oli erittäin herkullinen ja todella kaunis! Tilaamme täältä myös jatkossa.',
+            author: 'Jonna, Nokia',
           },
         ]}
       ></Carousel>

@@ -75,10 +75,7 @@ export const Assortment = () => (
   <div className="content assortment">
     <Banner imgUrl="/images/banner-1.jpg" text="Valikoima ja hinnasto"></Banner>
     <Container>
-      <h3>
-        VALIKOIMA JA HINNASTO (alkaen 1.9.2020), kaikki hinnat sisältävät alv
-        14%
-      </h3>
+      <h3>VALIKOIMA JA HINNASTO, kaikki hinnat sisältävät alv 14%</h3>
       <div className="item-header">
         <p>
           Uniikit täytekakut <span>alk. 70€</span>
@@ -86,55 +83,94 @@ export const Assortment = () => (
       </div>
       <p>
         Täytekakut valmistetaan käsityönä asiakkaan toiveiden mukaan. Kakuissa
-        on täytteenä runsaat rahka- tai tuorejuustopohjaiset liivatteella
-        hyydytetyt mousset. 10 hengen kakussa 1 maku ja 20- 30 hengen kakuissa
-        1-2 makua. Kuorrutteena on maustettu marenkivoikreemi ellei muuta
-        toivota. Pohjaksi voit valita vaalean- tai kaakaopohjan. Kakkujen
-        korkeus on noin 10-12cm.
+        on täytteenä rahka- tai tuorejuustopohjaiset liivatteella hyydytetyt
+        mousset. Pienemmissä kakuissa 1 maku ja isommissa kakuissa 2 makua.
+        Kuorrutteena on maustettu marenkivoikreemi ellei muuta toivota. Pohjaksi
+        voit valita vaalean- tai kaakaopohjan. Hinta sisältää peruskoristelun.
+        Hyvin runsaista taikka aikaa vievistä koristeluista hinta erikseen.
       </p>
       <ul>
         <li>
-          noin 10 h (halkaisija 15cm) <strong>70,00€</strong>
+          7-9 henkeä <strong>70,00€</strong>
         </li>
         <li>
-          noin 20 h (halkaisija 23cm) <strong>90,00€</strong>
+          10-12 henkeä <strong>75,00€</strong>
         </li>
         <li>
-          noin 30 h (halkaisija 25cm) <strong>120,00€</strong>
+          18-20 henkeä <strong>100,00€</strong>
+        </li>
+        <li>
+          n. 25 henkeä <strong>125,00€</strong>
         </li>
       </ul>
       <p>
-        Kakkumenu (suosituimmiksi nousseet yhdistelmät valintaasi helpottamaan):
+        Kakkumenu 18-20 hengen ja noin 25 hengen kakkuihin (soveltaen pienempiin
+        kakkuihin)
       </p>
       <ul>
         <li>
-          Vadelman viettelys (vaalea pohja, vadelma- ja valkosuklaamousse)
+          Vadelman viettelys (vaalea pohja, vadelmamousse ja valkosuklaamousse
+          valkosuklaarouheella)
         </li>
         <li>
-          Isoäidin mustikkapiirakka (vaalea pohja, mustikka-kardemumma- ja
-          vaniljamousse)
+          Isoäidin mustikkapiirakka (vaalea pohja, mustikka-kardemummamousse ja
+          vaniljamousse mustikoilla)
         </li>
         <li>
-          Tropiikin kutsu (vaalea pohja, mansikka-lime- ja mango-ananasmousse)
+          Tropiikin kutsu (vaalea pohja, mansikka-limemousse ja mango-
+          ananasmousse (kesäisin mangomousse mansikoilla))
         </li>
-        <li>Sweet and sour (vaalea pohja, kinuski- ja sitruunamousse)</li>
+        <li>
+          Sweet and sour (vaalea pohja, sitruunamousse ja kinuskimousse
+          suolaisella maitosuklaarouheella)
+        </li>
+        <li>
+          Kinuskin kuiskaus (vaalea pohja, kinuskimousse vadelmilla ja
+          vadelmamousse)
+        </li>
         <li>
           Metsäretkellä (vaalea pohja, vaniljamousse puolukoilla ja
           kinuskimousse)
         </li>
         <li>
-          Haaveideni kakku (oma valintainen pohja ja 1- 2 täytettä toiveidesi
+          Lakritsin lumo (vaalea pohja, lakritsimousse vadelmilla ja
+          vadelmamousse)
+        </li>
+        <li>
+          Haaveista totta (oma valintainen pohja ja 1-2 täytettä toiveidesi
           mukaan)
         </li>
       </ul>
       <div className="item-header">
         <p>
-          Keksipohjaiset moussekakut <span>55€</span>
+          Keksipohjaiset moussekakut <span>alk. 50€</span>
         </p>
       </div>
       <p>
-        Halkaisijaltaan 22-24cm, riittävyys noin 12 henkeä. Halutessasi voit
-        vaihtaa keksipohjan mutakakkupohjaan <strong>+5€</strong>
+        Moussekakuissa on rahka- tai tuorejuustopohjaiset liivatteella
+        hyydytetyt mousset ja keksipohja. Maut vastaavia kuin täytekakuissa.
+      </p>
+      <ul>
+        <li>
+          n. 10 henkeä <strong>50,00€</strong>
+        </li>
+        <li>
+          n. 15 henkeä <strong>75,00€</strong>
+        </li>
+      </ul>
+      <div className="item-header">
+        <p>
+          Pilvilinnan suklaakakku <span>65€</span>
+        </p>
+      </div>
+      <p>
+        Maailman paras suklaakakku, jossa mehevän suklaisen pohjan välissä
+        kirsikkahilloa ja mascarpone-suklaamoussea sekä päällä täydellinen
+        suklaakuorrute.
+      </p>
+      <p>
+        Voit myös ostaa Pilvilinnan suklaakakun reseptin (toimitetaan
+        sähköpostiin) hintaan <strong>7,90€</strong>
       </p>
       <div className="item-header">
         <p>
@@ -145,13 +181,17 @@ export const Assortment = () => (
         Minimitilaus 12 kpl normaali / 24 kpl mini, teeman mukainen koristelu{' '}
         <strong>+5€</strong>
       </p>
+      <p>Makuina muun muassa:</p>
       <ul>
         <li>vadelma-valkosuklaa</li>
-        <li>tuplasuklaa (tumma- ja valkosuklaa)</li>
+        <li>suklaa</li>
+        <li>suklaa-valkosuklaa</li>
+        <li>minttusuklaa</li>
         <li>maapähkinä-suklaa</li>
-        <li>suklaa-nutella</li>
+        <li>suklaa-Nutella</li>
         <li>mustikka-sitruuna</li>
         <li>banaani-kinuski</li>
+        <li>Biscoff</li>
       </ul>
       <div className="item-header">
         <p>
@@ -163,10 +203,11 @@ export const Assortment = () => (
         <li>mokka-suklaa</li>
         <li>piparminttu-suklaa</li>
         <li>turkinpippuri</li>
+        <li>vadelma</li>
       </ul>
       <div className="item-header">
         <p>
-          Cookiet <span>1,00€/kpl</span>
+          Cookiet <span>1,20€/kpl</span>
         </p>
       </div>
       <ul>
@@ -175,50 +216,57 @@ export const Assortment = () => (
       </ul>
       <div className="item-header">
         <p>
-          Macarons <span>1,30€/kpl</span>
+          Macarons <span>1,50€/kpl</span>
         </p>
       </div>
       <p>
-        Tilauserä noin 25 kpl (myös minimitilaus) yhtä väriä/makua, hinta{' '}
-        <strong>32,50€</strong>
+        Tilauserä 22kpl/maku, väri valittavissa toiveiden mukaan) hinta{' '}
+        <strong>36€</strong>
       </p>
       <ul>
         <li>sitruuna</li>
         <li>lime</li>
-        <li>nutella</li>
-        <li>suolakinuski</li>
         <li>mustaherukka</li>
+        <li>suolakinuski</li>
         <li>suklaa</li>
+        <li>Nutella</li>
+        <li>Biscoff</li>
       </ul>
       <div className="item-header">
         <p>
-          Voileipäkakut <span>alk. 90€</span>
+          Voileipäkakut <span>alk. 100€</span>
         </p>
       </div>
       <p>
-        Voileipäkakut valmistetaan itsetehtyyn leipään, halkaisija noin 25cm,
-        riittävyys noin 20 henkeä
+        Voileipäkakut valmistetaan pyöreinä itsetehtyyn leipään. Saatavilla vain
+        yksi koko, jonka riittävyys noin 18-20 henkeä.
       </p>
       <ul>
         <li>
-          kinkku/kalkkuna <strong>90€</strong>
+          kinkku <strong>100€</strong>
         </li>
         <li>
-          texmex broileri (sisältää laktoosia) <strong>90€</strong>
+          kalkkuna <strong>100€</strong>
         </li>
         <li>
-          lämminsavulohi <strong>95€</strong>
+          texmex broileri (sisältää laktoosia) <strong>100€</strong>
         </li>
         <li>
-          kylmäsavuporo <strong>95€</strong>
+          lämminsavulohi <strong>110€</strong>
         </li>
         <li>
-          kasvis <strong>90€</strong>
+          kylmäsavuporo <strong>110€</strong>
+        </li>
+        <li>
+          kasvis <strong>100€</strong>
         </li>
       </ul>
+      <div className="item-header">
+        <p>Pilvilinnan lautturi</p>
+      </div>
       <p>
-        Pilvilinnan lautturi; laktoositon saaristolaisleipä{' '}
-        <strong>7,00€</strong> kpl, <strong>12,00€</strong> 2 kpl
+        Laktoositon saaristolaisleipä <strong>7,00€</strong> kpl,{' '}
+        <strong>12,00€</strong> 2 kpl
       </p>
       <div className="info-text-container">
         <p>
