@@ -88,7 +88,7 @@ export const Home = () => (
         items={[
           {
             text:
-              'Hymyilevää ja mutkatonta palvelua, maistuvia ja kauniita kakkuja. Mikroyrityksen vaivattomuus ja persoonallisuus, rakastan! Luottoleipurini, Pilvilinnan Anna ️Kiitos!',
+              'Hymyilevää ja mutkatonta palvelua, maistuvia ja kauniita kakkuja. Mikroyrityksen vaivattomuus ja persoonallisuus, rakastan! Luottoleipurini, Pilvilinnan Anna Kiitos!',
             author: 'Essi, Tampere',
           },
           {

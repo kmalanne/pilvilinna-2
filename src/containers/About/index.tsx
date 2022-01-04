@@ -4,6 +4,6 @@ import './index.css';
 
 export const About = () => (
   <div className="content about">
-    <Banner imgUrl="/images/banner-1.jpg" text="Leipomo"></Banner>>
+    <Banner imgUrl="/images/banner-1.jpg" text="Leipomo"></Banner>
   </div>
 );

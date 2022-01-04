@@ -4,6 +4,6 @@ import './index.css';
 
 export const Contact = () => (
   <div className="content contact">
-    <Banner imgUrl="/images/banner-2.jpg" text="Ota yhteyttä"></Banner>>
+    <Banner imgUrl="/images/banner-2.jpg" text="Ota yhteyttä"></Banner>
   </div>
 );
