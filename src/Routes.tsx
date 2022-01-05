@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { About } from './containers/About';
 import { Assortment } from './containers/Assortment';
 import { Contact } from './containers/Contact';
@@ -10,14 +10,13 @@ import { routePaths } from './utils/routePaths';
 
 const { ABOUT, ASSORTMENT, CONTACT, HOME, ORDERING, SOCIAL_MEDIA } = routePaths;
 
-export const Routes = () => (
-  <Switch>
-    <Route path={HOME} exact component={Home} />
-    <Route path={ABOUT} exact component={About} />
-    <Route path={CONTACT} exact component={Contact} />
-    <Route path={ASSORTMENT} exact component={Assortment} />
-    <Route path={ORDERING} exact component={OrderingAndDelivering} />
-    <Route path={SOCIAL_MEDIA} exact component={SocialMedia} />
-    <Route component={Home} />
-  </Switch>
+export const AppRoutes = () => (
+  <Routes>
+    <Route path={HOME} element={<Home />} />
+    <Route path={ABOUT} element={<About />} />
+    <Route path={CONTACT} element={<Contact />} />
+    <Route path={ASSORTMENT} element={<Assortment />} />
+    <Route path={ORDERING} element={<OrderingAndDelivering />} />
+    <Route path={SOCIAL_MEDIA} element={<SocialMedia />} />
+  </Routes>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes } from './Routes';
+import { AppRoutes } from './Routes';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Navigation } from './components/Navigation';
@@ -10,8 +10,8 @@ export const App: React.FC = () => {
     <div className="App">
       <Header />
       <Navigation />
-      <Routes />
-      <Footer></Footer>
+      <AppRoutes />
+      <Footer />
     </div>
   );
 };

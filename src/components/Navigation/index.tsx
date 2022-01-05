@@ -61,25 +61,27 @@ export const Navigation: React.FC = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <NavLink
-                exact
-                className="normal"
-                activeClassName="active"
+                className={({ isActive }) =>
+                  `normal ${isActive ? 'active' : ''}`
+                }
                 onClick={onToggle}
                 to={HOME}
               >
                 Etusivu
               </NavLink>
               {/* <NavLink
-                className="normal"
-                activeClassName="active"
+                className={({ isActive }) =>
+                  `normal ${isActive ? 'active' : ''}`
+                }
                 onClick={onToggle}
                 to={ABOUT}
               >
                 Leipomo
               </NavLink> */}
               <NavLink
-                className="normal"
-                activeClassName="active"
+                className={({ isActive }) =>
+                  `normal ${isActive ? 'active' : ''}`
+                }
                 onClick={onToggle}
                 to={ASSORTMENT}
               >
@@ -88,24 +90,27 @@ export const Navigation: React.FC = () => {
             </Nav>
             <Nav className="right-align">
               <NavLink
-                className="normal"
-                activeClassName="active"
+                className={({ isActive }) =>
+                  `normal ${isActive ? 'active' : ''}`
+                }
                 onClick={onToggle}
                 to={ORDERING}
               >
                 Tilaus- ja toimitusehdot
               </NavLink>
               <NavLink
-                className="normal"
-                activeClassName="active"
+                className={({ isActive }) =>
+                  `normal ${isActive ? 'active' : ''}`
+                }
                 onClick={onToggle}
                 to={CONTACT}
               >
                 Ota yhteyttä
               </NavLink>
               {/* <NavLink
-                className="normal"
-                activeClassName="active"
+                className={({ isActive }) =>
+                  `normal ${isActive ? 'active' : ''}`
+                }
                 onClick={onToggle}
                 to={'SOCIAL_MEDIA'}
               >
