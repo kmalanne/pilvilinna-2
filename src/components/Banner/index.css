@@ -1,4 +1,4 @@
-.banner-jumbotron {
+.banner {
   background-size: cover;
   background-position: center top;
   padding: 8rem 2rem;
@@ -7,7 +7,7 @@
   opacity: 0.8;
 }
 
-.banner-jumbotron h3 {
+.banner h3 {
   text-align: center;
   font-size: 3.5rem;
   color: #000000;

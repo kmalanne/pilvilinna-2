@@ -72,7 +72,7 @@ const images = [
 ];
 
 export const Assortment = () => (
-  <div className="content assortment">
+  <div className="assortment">
     <Banner imgUrl="/images/banner-1.jpg" text="Valikoima ja hinnasto"></Banner>
     <Container>
       <h3>VALIKOIMA JA HINNASTO, kaikki hinnat sisältävät alv 14%</h3>

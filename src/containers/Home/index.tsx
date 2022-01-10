@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Image, Jumbotron, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import {
   faBirthdayCake,
@@ -13,14 +13,14 @@ import { routePaths } from '../../utils/routePaths';
 import './index.css';
 
 export const Home = () => (
-  <div className="content home">
-    <Jumbotron>
+  <div className="home">
+    <div className="container-fluid">
       <h1>Pilvilinnan leipomo</h1>
       <p>Unelmia ja haaveita, jotka maistuvat makealta.</p>
       <NavLink className="pill-btn" to={routePaths.CONTACT}>
         Ota yhteyttä
       </NavLink>
-    </Jumbotron>
+    </div>
     <Container className="baker-info-container">
       <Row>
         <Col className="baker-img-container" lg={6} md={12}>
@@ -87,13 +87,11 @@ export const Home = () => (
       <Carousel
         items={[
           {
-            text:
-              'Hymyilevää ja mutkatonta palvelua, maistuvia ja kauniita kakkuja. Mikroyrityksen vaivattomuus ja persoonallisuus, rakastan! Luottoleipurini, Pilvilinnan Anna Kiitos!',
+            text: 'Hymyilevää ja mutkatonta palvelua, maistuvia ja kauniita kakkuja. Mikroyrityksen vaivattomuus ja persoonallisuus, rakastan! Luottoleipurini, Pilvilinnan Anna Kiitos!',
             author: 'Essi, Tampere',
           },
           {
-            text:
-              'Pilvilinnan leipomon kakut ovat tehneet oikeutta meidän perheen juhliin. Maistuvat ja todella kauniit kakut ovat juhlapöydän kruunu.',
+            text: 'Pilvilinnan leipomon kakut ovat tehneet oikeutta meidän perheen juhliin. Maistuvat ja todella kauniit kakut ovat juhlapöydän kruunu.',
             author: 'Mari, Ylöjärvi',
           },
           {
@@ -101,8 +99,7 @@ export const Home = () => (
             author: 'Sanna, Pirkkala',
           },
           {
-            text:
-              'Voimme suositella Pilvilinnan leipomoa lämpimästi! Ristiäiskakkumme sai paljon kehuja - kakku oli erittäin herkullinen ja todella kaunis! Tilaamme täältä myös jatkossa.',
+            text: 'Voimme suositella Pilvilinnan leipomoa lämpimästi! Ristiäiskakkumme sai paljon kehuja - kakku oli erittäin herkullinen ja todella kaunis! Tilaamme täältä myös jatkossa.',
             author: 'Jonna, Nokia',
           },
         ]}

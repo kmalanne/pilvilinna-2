@@ -11,12 +11,14 @@ import { routePaths } from './utils/routePaths';
 const { ABOUT, ASSORTMENT, CONTACT, HOME, ORDERING, SOCIAL_MEDIA } = routePaths;
 
 export const AppRoutes = () => (
-  <Routes>
-    <Route path={HOME} element={<Home />} />
-    <Route path={ABOUT} element={<About />} />
-    <Route path={CONTACT} element={<Contact />} />
-    <Route path={ASSORTMENT} element={<Assortment />} />
-    <Route path={ORDERING} element={<OrderingAndDelivering />} />
-    <Route path={SOCIAL_MEDIA} element={<SocialMedia />} />
-  </Routes>
+  <div className="content">
+    <Routes>
+      <Route path={HOME} element={<Home />} />
+      <Route path={ABOUT} element={<About />} />
+      <Route path={CONTACT} element={<Contact />} />
+      <Route path={ASSORTMENT} element={<Assortment />} />
+      <Route path={ORDERING} element={<OrderingAndDelivering />} />
+      <Route path={SOCIAL_MEDIA} element={<SocialMedia />} />
+    </Routes>
+  </div>
 );

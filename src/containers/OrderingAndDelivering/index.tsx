@@ -7,7 +7,7 @@ const phoneNumber = process.env.REACT_APP_PHONE_NUMBER;
 const phoneNumberDisplay = process.env.REACT_APP_PHONE_NUMBER_DISPLAY;
 
 export const OrderingAndDelivering = () => (
-  <div className="content ordering-delivering">
+  <div className="ordering-delivering">
     <Banner
       imgUrl="/images/banner-3.jpg"
       text="Tilaus- ja toimitusehdot"

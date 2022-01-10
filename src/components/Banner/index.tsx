@@ -1,5 +1,4 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
 import './index.css';
 
 export interface IBannerProps {
@@ -15,8 +14,8 @@ export const Banner: React.FC<IBannerProps> = (props: IBannerProps) => {
   };
 
   return (
-    <Jumbotron className="banner-jumbotron" style={style}>
+    <div className="container-fluid banner" style={style}>
       <h3>{text}</h3>
-    </Jumbotron>
+    </div>
   );
 };
