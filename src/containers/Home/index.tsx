@@ -9,7 +9,7 @@ import {
 import { Carousel } from '../../components/Carousel';
 import { ServiceItem } from '../../components/ServiceItem';
 import bakerImage from '../../resources/anna.jpg';
-import { routePaths } from '../../utils/routePaths';
+import { AppRoute } from '../../utils/route';
 import './index.css';
 
 export const Home = () => (
@@ -17,7 +17,7 @@ export const Home = () => (
     <div className="container-fluid">
       <h1>Pilvilinnan leipomo</h1>
       <p>Unelmia ja haaveita, jotka maistuvat makealta.</p>
-      <NavLink className="pill-btn" to={routePaths.CONTACT}>
+      <NavLink className="pill-btn" to={AppRoute.Contact}>
         Ota yhteyttä
       </NavLink>
     </div>

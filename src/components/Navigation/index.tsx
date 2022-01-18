@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import './index.css';
-import { routePaths } from '../../utils/routePaths';
+import { AppRoute } from '../../utils/route';
 import logo from '../../resources/logo.jpg';
 
 export const Navigation: React.FC = () => {
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const containerRef = useRef<HTMLDivElement>();
 
@@ -36,15 +38,6 @@ export const Navigation: React.FC = () => {
     }
   };
 
-  const {
-    // ABOUT,
-    ASSORTMENT,
-    CONTACT,
-    HOME,
-    ORDERING,
-    // SOCIAL_MEDIA,
-  } = routePaths;
-
   return (
     <div className="navigation" ref={containerRef as any}>
       <Container>
@@ -65,27 +58,18 @@ export const Navigation: React.FC = () => {
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={HOME}
+                to={AppRoute.Home}
               >
-                Etusivu
+                {t('home', { ns: 'navigation' })}
               </NavLink>
-              {/* <NavLink
-                className={({ isActive }) =>
-                  `normal ${isActive ? 'active' : ''}`
-                }
-                onClick={onToggle}
-                to={ABOUT}
-              >
-                Leipomo
-              </NavLink> */}
               <NavLink
                 className={({ isActive }) =>
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={ASSORTMENT}
+                to={AppRoute.Assortment}
               >
-                Valikoima ja hinnasto
+                {t('assortment', { ns: 'navigation' })}
               </NavLink>
             </Nav>
             <Nav className="right-align">
@@ -94,29 +78,22 @@ export const Navigation: React.FC = () => {
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={ORDERING}
+                to={AppRoute.Ordering}
               >
-                Tilaus- ja toimitusehdot
+                {t('ordering', { ns: 'navigation' })}
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={CONTACT}
+                to={AppRoute.Contact}
               >
-                Ota yhteyttä
+                {t('contact', { ns: 'navigation' })}
               </NavLink>
-              {/* <NavLink
-                className={({ isActive }) =>
-                  `normal ${isActive ? 'active' : ''}`
-                }
-                onClick={onToggle}
-                to={'SOCIAL_MEDIA'}
-              >
-                Some
-              </NavLink> */}
-              <a href="http://annaj-sukkiajasuklaata.blogspot.com/">Blogi</a>
+              <a href="http://annaj-sukkiajasuklaata.blogspot.com/">
+                {t('blog', { ns: 'navigation' })}
+              </a>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
