@@ -1,0 +1,80 @@
+{
+  "banner": "Assortment and pricing",
+
+  "title": "ASSORTMENT AND PRICING, prices including VAT (14%)",
+
+  "unique_cake_title": "Unique stuffed cakes täytekakut",
+  "unique_cake_description_1": "The filling cakes are made by hand according to the customer's wishes. The cakes are stuffed with mousse-based mousses based on curd or cream cheese. Smaller cakes 1 flavour and larger cakes 2 flavours. The icing is flavoured meringue cream unless otherwise desired. You can choose a light or cocoa base as a base. The price includes basic decoration. For very rich or time consuming decorations, the price is agreed separately.",
+  "unique_cake_description_2": "Cake menu for cakes for 18-20 people and about 25 people (applying to smaller cakes)",
+  "unique_cake_choice_1": "Raspberry seduction (light base, raspberry mousse and white chocolate mousse with white chocolate crumb)",
+  "unique_cake_choice_2": "Grandmother's blueberry pie (light base, blueberry cardamom mousse and vanilla mousse with blueberries)",
+  "unique_cake_choice_3": "Call of tropic (light base, strawberry-lime mousse and mango-pineapple mousse (in summer: mango mousse with strawberries))",
+  "unique_cake_choice_4": "Sweet and sour (light base, lemon mousse and caramel mousse with salty milk chocolate crumb)",
+  "unique_cake_choice_5": "Whisper of caramel (light base, caramel mousse with raspberries and raspberry mousse)",
+  "unique_cake_choice_6": "Walk in the forest (light base, vanilla mousse with lingonberries and caramel mousse)",
+  "unique_cake_choice_7": "The enchantment of icorice (light base, licorice mousse with raspberries and raspberry mousse)",
+  "unique_cake_choice_8": "Dreams come true (your own optional base and 1-2 fillings according to your wishes)",
+
+  "mousse_cake_title": "Biscuit based mousse cakes",
+  "mousse_cake_description": "Mousse cakes have curd or cream cheese-based gelatin-cooled mousses and a biscuit base. Flavours similar to stuffed cakes.",
+
+  "chocolate_cake_title": "Pilvilinna's chocolate cake",
+  "chocolate_cake_description_1": "The best chocolate cake in the world, with cherry jam and mascarpone chocolate mousse between the succulent chocolate base and a perfect chocolate icing on top.",
+  "chocolate_cake_description_2": "You can also buy a Pilvilinna chocolate cake recipe (delivered by email) for the price",
+
+  "cupcake_title": "Cupcakes / mini cupcakes",
+  "cupcake_description_1": "Minimum order 12 pcs normal / 24 pcs mini. Decoration by theme.",
+  "cupcake_description_2": "Flavours include:",
+  "cupcake_choice_1": "raspberry white chocolate",
+  "cupcake_choice_2": "chocolate",
+  "cupcake_choice_3": "chocolate white chocolate",
+  "cupcake_choice_4": "mint chocolate",
+  "cupcake_choice_5": "peanut chocolate",
+  "cupcake_choice_6": "chocolate Nutella",
+  "cupcake_choice_7": "blueberry lemon",
+  "cupcake_choice_8": "banana caramel",
+  "cupcake_choice_9": "Biscoff",
+
+  "meringue_title": "Clouds (flavoured big meringues)",
+  "meringue_choice_1": "dark chocolate",
+  "meringue_choice_2": "mocha chocolate",
+  "meringue_choice_3": "peppermint chocolate",
+  "meringue_choice_4": "turkinpippuri (salted licorice)",
+  "meringue_choice_5": "raspberry",
+
+  "cookie_title": "Cookies",
+  "cookie_choice_1": "chocolate chip",
+  "cookie_choice_2": "chocolate",
+
+  "macaron_title": "Macarons",
+  "macaron_description": "Order 22pcs per flavour, (color can be selected according to wishes) ",
+  "macaron_choice_1": "lemon",
+  "macaron_choice_2": "lime",
+  "macaron_choice_3": "blackcurrant",
+  "macaron_choice_4": "salted caramel",
+  "macaron_choice_5": "chocolate",
+  "macaron_choice_6": "Nutella",
+  "macaron_choice_7": "Biscoff",
+
+  "sandwich_cake_title": "Sandwich cakes",
+  "sandwich_cake_description": "Sandwich cakes are made round on homemade bread. Available in only one size, with a capacity of about 18-20 people.",
+  "sandwich_cake_choice_1": "ham",
+  "sandwich_cake_choice_2": "turkey",
+  "sandwich_cake_choice_3": "texmex chicken (contains lactose)",
+  "sandwich_cake_choice_4": "warm smoked salmong",
+  "sandwich_cake_choice_5": "cold smoked reindeer",
+  "sandwich_cake_choice_6": "vegetable",
+
+  "bread_title": "Pilvilinnan lautturi",
+  "bread_description": "Lactose free archipelago bread",
+
+  "info_1": "I also make other sweet and savory pastries, ask for an offer!",
+  "info_2": "In addition, you can request a quote for party arrangements or assistance. I have been e.g. decorating parties and helping out at parties (making coffee, serving, tidying up).",
+  "info_3": "The products are always made from lactose-free raw materials whenever possible, but some of the fillings in the filling cake, for example, contain lactose (eg white chocolate). I also make gluten-free and, if necessary, some milk-free and egg-free pastries to order. Please note, however, that normal products (cereals containing gluten, milk, nuts ...) are processed in the same room, so residues may be present in the products. Please always indicate possible diets / allergies when ordering!",
+  "info_4": "I do not make licensed characters (e.g. Frozen, My Little Pony, Paw Patrol, Peppa the Pig, etc.) for cakes or those cakes. The theme can be adapted to the cakes, and if desired, the customer can add a toy or other decoration to the cake, for example.",
+
+  "circa": "circa",
+  "person": "persons",
+  "price_from": "from",
+  "pcs": "pcs"
+}

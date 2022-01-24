@@ -7,7 +7,6 @@ import { AppRoute } from '../../utils/route';
 import logo from '../../resources/logo.jpg';
 
 export const Navigation: React.FC = () => {
-  const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const containerRef = useRef<HTMLDivElement>();
 
@@ -17,6 +16,9 @@ export const Navigation: React.FC = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   });
+
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'navigation' });
 
   const handleScroll = () => {
     const element = containerRef ? containerRef.current : undefined;
@@ -60,7 +62,7 @@ export const Navigation: React.FC = () => {
                 onClick={onToggle}
                 to={AppRoute.Home}
               >
-                {t('home', { ns: 'navigation' })}
+                {tNS('home')}
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
@@ -69,7 +71,7 @@ export const Navigation: React.FC = () => {
                 onClick={onToggle}
                 to={AppRoute.Assortment}
               >
-                {t('assortment', { ns: 'navigation' })}
+                {tNS('assortment')}
               </NavLink>
             </Nav>
             <Nav className="right-align">
@@ -80,7 +82,7 @@ export const Navigation: React.FC = () => {
                 onClick={onToggle}
                 to={AppRoute.Ordering}
               >
-                {t('ordering', { ns: 'navigation' })}
+                {tNS('ordering')}
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
@@ -89,10 +91,10 @@ export const Navigation: React.FC = () => {
                 onClick={onToggle}
                 to={AppRoute.Contact}
               >
-                {t('contact', { ns: 'navigation' })}
+                {tNS('contact')}
               </NavLink>
               <a href="http://annaj-sukkiajasuklaata.blogspot.com/">
-                {t('blog', { ns: 'navigation' })}
+                {tNS('blog')}
               </a>
             </Nav>
           </Navbar.Collapse>

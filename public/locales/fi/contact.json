@@ -1,3 +1,6 @@
 {
-  "contact": "Ota yhteyttä"
+  "contact": "Ota yhteyttä",
+  "email": "Sähköposti",
+  "phone": "Puhelin",
+  "company": "Yritys"
 }

@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { SocialMediaLinkGroup } from '../SocialMediaLinkGroup';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 import './index.css';
 
 const phoneNumber = process.env.REACT_APP_PHONE_NUMBER;
@@ -23,7 +24,8 @@ export const Header: React.FC = () => {
           </a>
         </div>
         <div className="header-right">
-          <SocialMediaLinkGroup></SocialMediaLinkGroup>
+          <SocialMediaLinkGroup />
+          <LanguageSwitcher />
         </div>
       </Container>
     </div>

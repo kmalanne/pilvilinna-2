@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container } from 'react-bootstrap';
 import { Banner } from '../../components/Banner';
 import { Gallery } from '../../components/Gallery';
@@ -71,236 +72,172 @@ const images = [
   },
 ];
 
-export const Assortment = () => (
-  <div className="assortment">
-    <Banner imgUrl="/images/banner-1.jpg" text="Valikoima ja hinnasto"></Banner>
-    <Container>
-      <h3>VALIKOIMA JA HINNASTO, kaikki hinnat sisältävät alv 14%</h3>
-      <div className="item-header">
+export const Assortment = () => {
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'assortment' });
+
+  return (
+    <div className="assortment">
+      <Banner imgUrl="/images/banner-1.jpg" text={tNS('banner')}></Banner>
+      <Container>
+        <h3>{tNS('title')}</h3>
+        <div className="item-header">
+          <p>
+            {tNS('unique_cake_title')} <span>{tNS('price_from')} 70€</span>
+          </p>
+        </div>
+        <p>{tNS('unique_cake_description_1')}</p>
+        <ul>
+          <li>
+            7-9 {tNS('person')} <strong>70,00€</strong>
+          </li>
+          <li>
+            10-12 {tNS('person')} <strong>75,00€</strong>
+          </li>
+          <li>
+            18-20 {tNS('person')} <strong>100,00€</strong>
+          </li>
+          <li>
+            25-30 {tNS('person')} <strong>125,00€</strong>
+          </li>
+        </ul>
+        <p>{tNS('unique_cake_description_2')}</p>
+        <ul>
+          <li>{tNS('unique_cake_choice_1')}</li>
+          <li>{tNS('unique_cake_choice_2')}</li>
+          <li>{tNS('unique_cake_choice_3')}</li>
+          <li>{tNS('unique_cake_choice_4')}</li>
+          <li>{tNS('unique_cake_choice_5')}</li>
+          <li>{tNS('unique_cake_choice_6')}</li>
+          <li>{tNS('unique_cake_choice_7')}</li>
+          <li>{tNS('unique_cake_choice_8')}</li>
+        </ul>
+        <div className="item-header">
+          <p>
+            {tNS('mousse_cake_title')} <span>{tNS('price_from')} 50€</span>
+          </p>
+        </div>
+        <p>{tNS('mousse_cake_description')}</p>
+        <ul>
+          <li>
+            {tNS('circa')} 10 {tNS('person')} <strong>50,00€</strong>
+          </li>
+          <li>
+            {tNS('circa')} 15 {tNS('person')} <strong>75,00€</strong>
+          </li>
+        </ul>
+        <div className="item-header">
+          <p>
+            {tNS('chocolate_cake_title')} <span>65€</span>
+          </p>
+        </div>
+        <p>{tNS('chocolate_cake_description_1')}</p>
         <p>
-          Uniikit täytekakut <span>alk. 70€</span>
+          {tNS('chocolate_cake_description_2')} <strong>7,90€</strong>
         </p>
-      </div>
-      <p>
-        Täytekakut valmistetaan käsityönä asiakkaan toiveiden mukaan. Kakuissa
-        on täytteenä rahka- tai tuorejuustopohjaiset liivatteella hyydytetyt
-        mousset. Pienemmissä kakuissa 1 maku ja isommissa kakuissa 2 makua.
-        Kuorrutteena on maustettu marenkivoikreemi ellei muuta toivota. Pohjaksi
-        voit valita vaalean- tai kaakaopohjan. Hinta sisältää peruskoristelun.
-        Hyvin runsaista taikka aikaa vievistä koristeluista hinta erikseen.
-      </p>
-      <ul>
-        <li>
-          7-9 henkeä <strong>70,00€</strong>
-        </li>
-        <li>
-          10-12 henkeä <strong>75,00€</strong>
-        </li>
-        <li>
-          18-20 henkeä <strong>100,00€</strong>
-        </li>
-        <li>
-          25-30 henkeä <strong>125,00€</strong>
-        </li>
-      </ul>
-      <p>
-        Kakkumenu 18-20 hengen ja noin 25 hengen kakkuihin (soveltaen pienempiin
-        kakkuihin)
-      </p>
-      <ul>
-        <li>
-          Vadelman viettelys (vaalea pohja, vadelmamousse ja valkosuklaamousse
-          valkosuklaarouheella)
-        </li>
-        <li>
-          Isoäidin mustikkapiirakka (vaalea pohja, mustikka-kardemummamousse ja
-          vaniljamousse mustikoilla)
-        </li>
-        <li>
-          Tropiikin kutsu (vaalea pohja, mansikka-limemousse ja mango-
-          ananasmousse (kesäisin mangomousse mansikoilla))
-        </li>
-        <li>
-          Sweet and sour (vaalea pohja, sitruunamousse ja kinuskimousse
-          suolaisella maitosuklaarouheella)
-        </li>
-        <li>
-          Kinuskin kuiskaus (vaalea pohja, kinuskimousse vadelmilla ja
-          vadelmamousse)
-        </li>
-        <li>
-          Metsäretkellä (vaalea pohja, vaniljamousse puolukoilla ja
-          kinuskimousse)
-        </li>
-        <li>
-          Lakritsin lumo (vaalea pohja, lakritsimousse vadelmilla ja
-          vadelmamousse)
-        </li>
-        <li>
-          Haaveista totta (oma valintainen pohja ja 1-2 täytettä toiveidesi
-          mukaan)
-        </li>
-      </ul>
-      <div className="item-header">
+        <div className="item-header">
+          <p>
+            {tNS('cupcake_title')} <span>45€</span>
+          </p>
+        </div>
         <p>
-          Keksipohjaiset moussekakut <span>alk. 50€</span>
+          {tNS('cupcake_description_1')} <strong>+5€</strong>
         </p>
-      </div>
-      <p>
-        Moussekakuissa on rahka- tai tuorejuustopohjaiset liivatteella
-        hyydytetyt mousset ja keksipohja. Maut vastaavia kuin täytekakuissa.
-      </p>
-      <ul>
-        <li>
-          n. 10 henkeä <strong>50,00€</strong>
-        </li>
-        <li>
-          n. 15 henkeä <strong>75,00€</strong>
-        </li>
-      </ul>
-      <div className="item-header">
+        <p>{tNS('cupcake_description_2')}</p>
+        <ul>
+          <li>{tNS('cupcake_choice_1')}</li>
+          <li>{tNS('cupcake_choice_2')}</li>
+          <li>{tNS('cupcake_choice_3')}</li>
+          <li>{tNS('cupcake_choice_4')}</li>
+          <li>{tNS('cupcake_choice_5')}</li>
+          <li>{tNS('cupcake_choice_6')}</li>
+          <li>{tNS('cupcake_choice_7')}</li>
+          <li>{tNS('cupcake_choice_8')}</li>
+          <li>{tNS('cupcake_choice_9')}</li>
+        </ul>
+        <div className="item-header">
+          <p>
+            {tNS('meringue_title')} <span>0,75€/{tNS('pcs')}</span>
+          </p>
+        </div>
+        <ul>
+          <li>{tNS('meringue_choice_1')}</li>
+          <li>{tNS('meringue_choice_2')}</li>
+          <li>{tNS('meringue_choice_3')}</li>
+          <li>{tNS('meringue_choice_4')}</li>
+          <li>{tNS('meringue_choice_5')}</li>
+        </ul>
+        <div className="item-header">
+          <p>
+            {tNS('cookie_title')} <span>1,20€/kpl</span>
+          </p>
+        </div>
+        <ul>
+          <li>{tNS('cookie_choice_1')}</li>
+          <li>{tNS('cookie_choice_1')}</li>
+        </ul>
+        <div className="item-header">
+          <p>
+            {tNS('macaron_title')} <span>1,50€/kpl</span>
+          </p>
+        </div>
         <p>
-          Pilvilinnan suklaakakku <span>65€</span>
+          {tNS('macaron_description')} <strong>36€</strong>
         </p>
-      </div>
-      <p>
-        Maailman paras suklaakakku, jossa mehevän suklaisen pohjan välissä
-        kirsikkahilloa ja mascarpone-suklaamoussea sekä päällä täydellinen
-        suklaakuorrute.
-      </p>
-      <p>
-        Voit myös ostaa Pilvilinnan suklaakakun reseptin (toimitetaan
-        sähköpostiin) hintaan <strong>7,90€</strong>
-      </p>
-      <div className="item-header">
+        <ul>
+          <li>{tNS('macaron_choice_1')}</li>
+          <li>{tNS('macaron_choice_2')}</li>
+          <li>{tNS('macaron_choice_3')}</li>
+          <li>{tNS('macaron_choice_4')}</li>
+          <li>{tNS('macaron_choice_5')}</li>
+          <li>{tNS('macaron_choice_6')}</li>
+          <li>{tNS('macaron_choice_7')}</li>
+        </ul>
+        <div className="item-header">
+          <p>
+            {tNS('sandwich_cake_title')} <span>{tNS('price_from')} 100€</span>
+          </p>
+        </div>
+        <p>{tNS('sandwich_cake_description')}</p>
+        <ul>
+          <li>
+            {tNS('sandwich_cake_choice_1')} <strong>100€</strong>
+          </li>
+          <li>
+            {tNS('sandwich_cake_choice_2')} <strong>100€</strong>
+          </li>
+          <li>
+            {tNS('sandwich_cake_choice_3')} <strong>100€</strong>
+          </li>
+          <li>
+            {tNS('sandwich_cake_choice_4')} <strong>110€</strong>
+          </li>
+          <li>
+            {tNS('sandwich_cake_choice_5')} <strong>110€</strong>
+          </li>
+          <li>
+            {tNS('sandwich_cake_choice_6')} <strong>100€</strong>
+          </li>
+        </ul>
+        <div className="item-header">
+          <p>{tNS('bread_title')}</p>
+        </div>
         <p>
-          Kuppikakut / minikuppikakut <span>45€</span>
+          {tNS('bread_description')} <strong>7,00€</strong> {tNS('pcs')},{' '}
+          <strong>12,00€</strong> 2 {tNS('pcs')}
         </p>
-      </div>
-      <p>
-        Minimitilaus 12 kpl normaali / 24 kpl mini, teeman mukainen koristelu{' '}
-        <strong>+5€</strong>
-      </p>
-      <p>Makuina muun muassa:</p>
-      <ul>
-        <li>vadelma-valkosuklaa</li>
-        <li>suklaa</li>
-        <li>suklaa-valkosuklaa</li>
-        <li>minttusuklaa</li>
-        <li>maapähkinä-suklaa</li>
-        <li>suklaa-Nutella</li>
-        <li>mustikka-sitruuna</li>
-        <li>banaani-kinuski</li>
-        <li>Biscoff</li>
-      </ul>
-      <div className="item-header">
-        <p>
-          Pilvet (maustetut isot marengit) <span>0,75€/kpl</span>
-        </p>
-      </div>
-      <ul>
-        <li>tumma suklaa</li>
-        <li>mokka-suklaa</li>
-        <li>piparminttu-suklaa</li>
-        <li>turkinpippuri</li>
-        <li>vadelma</li>
-      </ul>
-      <div className="item-header">
-        <p>
-          Cookiet <span>1,20€/kpl</span>
-        </p>
-      </div>
-      <ul>
-        <li>suklaahippu</li>
-        <li>suklaa</li>
-      </ul>
-      <div className="item-header">
-        <p>
-          Macarons <span>1,50€/kpl</span>
-        </p>
-      </div>
-      <p>
-        Tilauserä 22kpl/maku, väri valittavissa toiveiden mukaan) hinta{' '}
-        <strong>36€</strong>
-      </p>
-      <ul>
-        <li>sitruuna</li>
-        <li>lime</li>
-        <li>mustaherukka</li>
-        <li>suolakinuski</li>
-        <li>suklaa</li>
-        <li>Nutella</li>
-        <li>Biscoff</li>
-      </ul>
-      <div className="item-header">
-        <p>
-          Voileipäkakut <span>alk. 100€</span>
-        </p>
-      </div>
-      <p>
-        Voileipäkakut valmistetaan pyöreinä itsetehtyyn leipään. Saatavilla vain
-        yksi koko, jonka riittävyys noin 18-20 henkeä.
-      </p>
-      <ul>
-        <li>
-          kinkku <strong>100€</strong>
-        </li>
-        <li>
-          kalkkuna <strong>100€</strong>
-        </li>
-        <li>
-          texmex broileri (sisältää laktoosia) <strong>100€</strong>
-        </li>
-        <li>
-          lämminsavulohi <strong>110€</strong>
-        </li>
-        <li>
-          kylmäsavuporo <strong>110€</strong>
-        </li>
-        <li>
-          kasvis <strong>100€</strong>
-        </li>
-      </ul>
-      <div className="item-header">
-        <p>Pilvilinnan lautturi</p>
-      </div>
-      <p>
-        Laktoositon saaristolaisleipä <strong>7,00€</strong> kpl,{' '}
-        <strong>12,00€</strong> 2 kpl
-      </p>
-      <div className="info-text-container">
-        <p>
-          <strong>
-            Teen myös muita makeita ja suolaisia leivonnaisia, kysy tarjousta!
-          </strong>
-        </p>
-        <p>
-          Lisäksi voit pyytää tarjousta juhlajärjestelyistä- tai avusta. Olen
-          ollut mm. koristelemassa juhlapaikkoja ja auttelemassa juhlissa
-          (kahvin keitto, tarjoilu, siistiminen).
-        </p>
-        <p>
-          {' '}
-          Tuotteet valmistetaan aina laktoosittomista raaka-aineista
-          mahdollisuuksien mukaan, mutta osa esim. täytekakun täytteistä
-          sisältää laktoosia (mm. valkosuklaa). Teen tilauksesta myös
-          gluteenittomia sekä tarvittaessa jonkin verran maidottomia ja
-          munattomia leivonnaisia. Huomioithan kuitenkin, että samassa tilassa
-          käsitellään normaaleja tuotteita (gluteenia sisältävät viljat, maidot,
-          pähkinät...), joten tuotteissa saattaa esiintyä jäämiä. Ilmoitathan
-          aina mahdolliset ruokavaliot/ allergiat tilauksen yhteydessä!
-        </p>
-        <p>
-          {' '}
-          En valmista lisenssoituja hahmoja (mm. Frozen, My Little Pony, Ryhmä
-          Hau, Pipsa Possu jne.) kakkuihin tai kyseisiä kakkuja. Teemaa voidaan
-          mukailla kakuissa ja halutessaan asiakas voi itse lisätä kakkuun esim.
-          koristeeksi käyvän lelun tai muun koristeen.
-        </p>
-      </div>
-    </Container>
-    <Container className="gallery-container">
-      <Gallery images={images}></Gallery>
-    </Container>
-  </div>
-);
+        <div className="info-text-container">
+          <p>
+            <strong>{tNS('info_1')}</strong>
+          </p>
+          <p>{tNS('info_2')}</p>
+          <p>{tNS('info_3')}</p>
+          <p>{tNS('info_4')}</p>
+        </div>
+      </Container>
+      <Container className="gallery-container">
+        <Gallery images={images}></Gallery>
+      </Container>
+    </div>
+  );
+};

@@ -10,13 +10,7 @@ i18next
     supportedLngs: ['fi', 'en'],
     fallbackLng: 'fi',
     nonExplicitSupportedLngs: true,
-    ns: [
-      'assortment',
-      'contact',
-      'home',
-      'navigation',
-      'orderingAndDelivering',
-    ],
+    ns: ['assortment', 'contact', 'home', 'navigation', 'ordering'],
     interpolation: {
       escapeValue: false,
     },

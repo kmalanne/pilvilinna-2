@@ -4,7 +4,7 @@
   "title": "VALIKOIMA JA HINNASTO, kaikki hinnat sisältävät alv 14%",
 
   "unique_cake_title": "Uniikit täytekakut",
-  "unique_cake_description": "Täytekakut valmistetaan käsityönä asiakkaan toiveiden mukaan. Kakuissa on täytteenä rahka- tai tuorejuustopohjaiset liivatteella hyydytetyt mousset. Pienemmissä kakuissa 1 maku ja isommissa kakuissa 2 makua. Kuorrutteena on maustettu marenkivoikreemi ellei muuta toivota. Pohjaksi voit valita vaalean- tai kaakaopohjan. Hinta sisältää peruskoristelun. Hyvin runsaista taikka aikaa vievistä koristeluista hinta erikseen.",
+  "unique_cake_description_1": "Täytekakut valmistetaan käsityönä asiakkaan toiveiden mukaan. Kakuissa on täytteenä rahka- tai tuorejuustopohjaiset liivatteella hyydytetyt mousset. Pienemmissä kakuissa 1 maku ja isommissa kakuissa 2 makua. Kuorrutteena on maustettu marenkivoikreemi ellei muuta toivota. Pohjaksi voit valita vaalean- tai kaakaopohjan. Hinta sisältää peruskoristelun. Hyvin runsaista taikka aikaa vievistä koristeluista hinta erikseen.",
   "unique_cake_description_2": "Kakkumenu 18-20 hengen ja noin 25 hengen kakkuihin (soveltaen pienempiin kakkuihin)",
   "unique_cake_choice_1": "Vadelman viettelys (vaalea pohja, vadelmamousse ja valkosuklaamousse valkosuklaarouheella)",
   "unique_cake_choice_2": "Isoäidin mustikkapiirakka (vaalea pohja, mustikka-kardemummamousse ja vaniljamousse mustikoilla)",
@@ -19,11 +19,11 @@
   "mousse_cake_description": "Moussekakuissa on rahka- tai tuorejuustopohjaiset liivatteella hyydytetyt mousset ja keksipohja. Maut vastaavia kuin täytekakuissa.",
 
   "chocolate_cake_title": "Pilvilinnan suklaakakku",
-  "chocolate_cake_description": "Maailman paras suklaakakku, jossa mehevän suklaisen pohjan välissä kirsikkahilloa ja mascarpone-suklaamoussea sekä päällä täydellinen suklaakuorrute.",
+  "chocolate_cake_description_1": "Maailman paras suklaakakku, jossa mehevän suklaisen pohjan välissä kirsikkahilloa ja mascarpone-suklaamoussea sekä päällä täydellinen suklaakuorrute.",
   "chocolate_cake_description_2": "Voit myös ostaa Pilvilinnan suklaakakun reseptin (toimitetaan sähköpostiin) hintaan",
 
   "cupcake_title": "Kuppikakut / minikuppikakut",
-  "cupcake_description": "Minimitilaus 12 kpl normaali / 24 kpl mini, teeman mukainen koristelu",
+  "cupcake_description_1": "Minimitilaus 12 kpl normaali / 24 kpl mini, teeman mukainen koristelu",
   "cupcake_description_2": "Makuina muun muassa:",
   "cupcake_choice_1": "vadelma-valkosuklaa",
   "cupcake_choice_2": "suklaa",
@@ -47,7 +47,7 @@
   "cookie_choice_2": "suklaa",
 
   "macaron_title": "Macarons",
-  "macaron_description": "Tilauserä 22kpl/maku, väri valittavissa toiveiden mukaan) hinta",
+  "macaron_description": "Tilauserä 22kpl/maku, (väri valittavissa toiveiden mukaan)",
   "macaron_choice_1": "sitruuna",
   "macaron_choice_2": "lime",
   "macaron_choice_3": "mustaherukka",
