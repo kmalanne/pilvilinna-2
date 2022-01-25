@@ -1,0 +1,6 @@
+.language-switch {
+  cursor: pointer;
+  user-select: none;
+  margin-right: 4px;
+  margin-left: 4px;
+}

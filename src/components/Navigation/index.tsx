@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import './index.css';
-import { routePaths } from '../../utils/routePaths';
+import { AppRoute } from '../../utils/route';
 import logo from '../../resources/logo.jpg';
 
 export const Navigation: React.FC = () => {
@@ -15,6 +16,9 @@ export const Navigation: React.FC = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   });
+
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'navigation' });
 
   const handleScroll = () => {
     const element = containerRef ? containerRef.current : undefined;
@@ -36,15 +40,6 @@ export const Navigation: React.FC = () => {
     }
   };
 
-  const {
-    // ABOUT,
-    ASSORTMENT,
-    CONTACT,
-    HOME,
-    ORDERING,
-    // SOCIAL_MEDIA,
-  } = routePaths;
-
   return (
     <div className="navigation" ref={containerRef as any}>
       <Container>
@@ -65,27 +60,18 @@ export const Navigation: React.FC = () => {
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={HOME}
+                to={AppRoute.Home}
               >
-                Etusivu
+                {tNS('home')}
               </NavLink>
-              {/* <NavLink
-                className={({ isActive }) =>
-                  `normal ${isActive ? 'active' : ''}`
-                }
-                onClick={onToggle}
-                to={ABOUT}
-              >
-                Leipomo
-              </NavLink> */}
               <NavLink
                 className={({ isActive }) =>
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={ASSORTMENT}
+                to={AppRoute.Assortment}
               >
-                Valikoima ja hinnasto
+                {tNS('assortment')}
               </NavLink>
             </Nav>
             <Nav className="right-align">
@@ -94,29 +80,22 @@ export const Navigation: React.FC = () => {
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={ORDERING}
+                to={AppRoute.Ordering}
               >
-                Tilaus- ja toimitusehdot
+                {tNS('ordering')}
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
                   `normal ${isActive ? 'active' : ''}`
                 }
                 onClick={onToggle}
-                to={CONTACT}
+                to={AppRoute.Contact}
               >
-                Ota yhteyttä
+                {tNS('contact')}
               </NavLink>
-              {/* <NavLink
-                className={({ isActive }) =>
-                  `normal ${isActive ? 'active' : ''}`
-                }
-                onClick={onToggle}
-                to={'SOCIAL_MEDIA'}
-              >
-                Some
-              </NavLink> */}
-              <a href="http://annaj-sukkiajasuklaata.blogspot.com/">Blogi</a>
+              <a href="http://annaj-sukkiajasuklaata.blogspot.com/">
+                {tNS('blog')}
+              </a>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
