@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Assortment } from './containers/Assortment';
 import { Contact } from './containers/Contact';
 import { Home } from './containers/Home';
@@ -13,6 +13,7 @@ export const AppRoutes = () => (
       <Route path={AppRoute.Contact} element={<Contact />} />
       <Route path={AppRoute.Assortment} element={<Assortment />} />
       <Route path={AppRoute.Ordering} element={<OrderingAndDelivering />} />
+      <Route path="*" element={<Navigate to={AppRoute.Home} />} />
     </Routes>
   </div>
 );
