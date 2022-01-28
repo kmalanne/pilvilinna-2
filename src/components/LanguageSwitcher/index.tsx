@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './index.css';
 
 export const LanguageSwitcher: React.FC = () => {
-  const { i18n, t } = useTranslation();
-  const tNS = (key: string) => t(key, { ns: 'component' });
+  const { i18n } = useTranslation();
 
   const changeLanguage = () => {
     i18n.changeLanguage(i18n.language === 'fi' ? 'en' : 'fi');
@@ -12,7 +11,7 @@ export const LanguageSwitcher: React.FC = () => {
 
   return (
     <button
-      aria-label={tNS('language_switch')}
+      aria-label="Kielivalinta language change"
       onClick={() => changeLanguage()}
     >
       {i18n.language === 'fi' ? 'en' : 'fi'}
