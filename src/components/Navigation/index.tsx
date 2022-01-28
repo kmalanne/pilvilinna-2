@@ -41,7 +41,7 @@ export const Navigation: React.FC = () => {
   };
 
   return (
-    <div className="navigation" ref={containerRef as any}>
+    <nav ref={containerRef as any}>
       <Container>
         <Navbar
           collapseOnSelect
@@ -50,7 +50,7 @@ export const Navigation: React.FC = () => {
           expand="lg"
         >
           <Navbar.Brand>
-            <img src={logo} alt="logo" />
+            <img src={logo} alt={tNS('logo')} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -100,6 +100,6 @@ export const Navigation: React.FC = () => {
           </Navbar.Collapse>
         </Navbar>
       </Container>
-    </div>
+    </nav>
   );
 };

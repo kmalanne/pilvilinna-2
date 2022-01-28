@@ -14,8 +14,12 @@ export const Banner: React.FC<IBannerProps> = (props: IBannerProps) => {
   };
 
   return (
-    <div className="container-fluid banner" style={style}>
-      <h3>{text}</h3>
+    <div
+      aria-labelledby="title"
+      className="container-fluid banner"
+      style={style}
+    >
+      <h1 id="title">{text}</h1>
     </div>
   );
 };

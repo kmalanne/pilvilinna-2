@@ -18,18 +18,23 @@ export const Home = () => {
   const tNS = (key: string) => t(key, { ns: 'home' });
 
   return (
-    <div className="home">
+    <section className="home" aria-labelledby="title">
       <div className="container-fluid">
-        <h1>{tNS('title')}</h1>
+        <h1 id="title">{tNS('title')}</h1>
         <p>{tNS('slogan')}</p>
         <NavLink className="pill-btn" to={AppRoute.Contact}>
           {tNS('contact')}
         </NavLink>
       </div>
       <Container className="baker-info-container">
+        <h2 className="sr-only">{tNS('info_title')}</h2>
         <Row>
           <Col className="baker-img-container" lg={6} md={12}>
-            <Image src={bakerImage} alt="baker" fluid />
+            <Image
+              src={bakerImage}
+              alt="Baker and owner of Pilvilinnan leipomo"
+              fluid
+            />
           </Col>
           <Col className="baker-info-text-container" lg={6} md={12}>
             <p>{tNS('info_1')}</p>
@@ -67,6 +72,7 @@ export const Home = () => {
         </Row>
       </Container>
       <Container className="carousel-container">
+        <h2 className="sr-only">{tNS('testimonial_title')}</h2>
         <Carousel
           items={[
             {
@@ -88,6 +94,6 @@ export const Home = () => {
           ]}
         ></Carousel>
       </Container>
-    </div>
+    </section>
   );
 };

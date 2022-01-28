@@ -8,8 +8,8 @@ export const Contact = () => {
   const tNS = (key: string) => t(key, { ns: 'contact' });
 
   return (
-    <div className="contact">
+    <section className="contact" aria-label={tNS('contact_info')}>
       <Banner imgUrl="/images/banner-2.jpg" text={tNS('contact')}></Banner>
-    </div>
+    </section>
   );
 };

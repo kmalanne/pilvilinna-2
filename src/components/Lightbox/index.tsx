@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronLeft,
@@ -35,6 +36,9 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
     onClickPrevious,
     onClose,
   } = props;
+
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'component' });
 
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const previousImage = usePrevious(currentImage) || 0;
@@ -200,10 +204,14 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
     return (
       <button
         className="lightbox-button lightbox-button-previous"
-        aria-label="Previous"
+        aria-label={tNS('previous_button')}
         onClick={prevImage}
       >
-        <FontAwesomeIcon icon={faChevronLeft} size="2x"></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          size="2x"
+          title={tNS('previous_button')}
+        ></FontAwesomeIcon>
       </button>
     );
   };
@@ -216,10 +224,14 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
     return (
       <button
         className="lightbox-button lightbox-button-next"
-        aria-label="Next"
+        aria-label={tNS('next_button')}
         onClick={nextImage}
       >
-        <FontAwesomeIcon icon={faChevronRight} size="2x"></FontAwesomeIcon>
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          size="2x"
+          title={tNS('next_button')}
+        ></FontAwesomeIcon>
       </button>
     );
   };
@@ -229,11 +241,16 @@ export const Lightbox: React.FC<ILightboxProps> = (props: ILightboxProps) => {
       <div id="lightbox" className="lightbox" onClick={handleClickBackdrop}>
         <button
           className="lightbox-button lightbox-button-close"
-          aria-label="Close Modal"
+          aria-label={tNS('close_modal_button')}
           onClick={handleClose}
         >
           <span className="lightbox-close-text">Close</span>
-          <FontAwesomeIcon icon={faTimes} size="2x" inverse></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faTimes}
+            size="2x"
+            inverse
+            title={tNS('close_modal_button')}
+          ></FontAwesomeIcon>
         </button>
         <div className="lightbox-content">{renderImage()}</div>
         {isImageLoaded && renderPrevArrow()}

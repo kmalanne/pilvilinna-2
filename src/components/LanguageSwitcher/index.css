@@ -1,6 +1,11 @@
-.language-switch {
-  cursor: pointer;
-  user-select: none;
+button {
   margin-right: 4px;
   margin-left: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000000;
+  font-weight: bold;
 }
