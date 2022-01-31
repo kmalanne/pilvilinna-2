@@ -11,7 +11,7 @@ const phoneNumberDisplay = process.env.REACT_APP_PHONE_NUMBER_DISPLAY;
 
 export const Header: React.FC = () => {
   return (
-    <div className="header">
+    <header>
       <Container>
         <div className="header-left">
           <a href={`tel:${phoneNumber}`}>
@@ -28,6 +28,6 @@ export const Header: React.FC = () => {
           <LanguageSwitcher />
         </div>
       </Container>
-    </div>
+    </header>
   );
 };

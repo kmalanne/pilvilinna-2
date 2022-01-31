@@ -15,7 +15,7 @@ export const ServiceItem: React.FC<IServiceItemProps> = (
   const { icon, text, title } = props;
 
   return (
-    <div className="service-item">
+    <div aria-label="Service" className="service-item">
       <FontAwesomeIcon icon={icon} size="4x"></FontAwesomeIcon>
       <h4>{title}</h4>
       <p>{text}</p>

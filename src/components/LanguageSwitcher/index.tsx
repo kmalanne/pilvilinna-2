@@ -10,8 +10,11 @@ export const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <div className="language-switch" onClick={() => changeLanguage()}>
+    <button
+      aria-label="Kielivalinta language change"
+      onClick={() => changeLanguage()}
+    >
       {i18n.language === 'fi' ? 'en' : 'fi'}
-    </div>
+    </button>
   );
 };

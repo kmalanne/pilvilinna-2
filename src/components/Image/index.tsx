@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export interface IImageProps {
   className?: string;
@@ -10,6 +11,9 @@ export interface IImageProps {
 }
 
 export const Image: React.FC<IImageProps> = (props: IImageProps) => {
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'component' });
+
   const { className, id, onClick, src } = props;
 
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -49,7 +53,8 @@ export const Image: React.FC<IImageProps> = (props: IImageProps) => {
         src={src}
         onClick={onImageClick}
         onLoad={onImageLoaded}
-        alt="Kuva"
+        alt={tNS('image')}
+        tabIndex={0}
       />
     </React.Fragment>
   );

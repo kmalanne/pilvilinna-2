@@ -1,4 +1,4 @@
-.header {
+header {
   background-color: #f0f0f0;
   height: 50px;
   display: flex;
@@ -7,14 +7,21 @@
   font-weight: 600;
 }
 
-.header .container {
+header .container {
   display: flex;
   flex-direction: row;
 }
 
-.header .container a {
+header .container a {
+  position: relative;
+  top: 3px;
   color: #454545;
   text-decoration: none;
+}
+
+header .container a:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 
 .header-left svg {
@@ -32,11 +39,11 @@
 }
 
 @media (max-width: 768px) {
-  .header {
+  header {
     height: 100px;
   }
 
-  .header .container {
+  header .container {
     flex-direction: column;
   }
 
@@ -54,7 +61,7 @@
 }
 
 @media (max-width: 500px) {
-  .header {
+  header {
     height: 130px;
   }
 

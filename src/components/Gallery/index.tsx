@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import './index.css';
+import { useTranslation } from 'react-i18next';
 import { Image, IImageProps } from '../Image';
 import { Lightbox } from '../../components/Lightbox';
+import './index.css';
 
 export interface IGalleryProps {
   images: Array<IImageProps>;
 }
 
 export const Gallery: React.FC<IGalleryProps> = (props: IGalleryProps) => {
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'component' });
+
   const { images } = props;
 
   const [currentImage, setCurrentImage] = useState(-1);
@@ -65,7 +69,7 @@ export const Gallery: React.FC<IGalleryProps> = (props: IGalleryProps) => {
 
   return (
     <React.Fragment>
-      <div className="gallery">
+      <div className="gallery" aria-label={tNS('image_gallery')}>
         {images.map((image: IImageProps, index) => (
           <Image
             key={index}

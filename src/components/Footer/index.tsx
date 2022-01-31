@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
   const tNS = (key: string) => t(key, { ns: 'contact' });
 
   return (
-    <div className="footer">
+    <footer>
       <Container>
         <Row>
           <Col sm>
@@ -36,6 +36,6 @@ export const Footer: React.FC = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </footer>
   );
 };

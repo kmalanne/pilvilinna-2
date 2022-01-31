@@ -12,10 +12,10 @@ export const OrderingAndDelivering = () => {
   const tNS = (key: string) => t(key, { ns: 'ordering' });
 
   return (
-    <div className="ordering-delivering">
+    <section className="ordering-delivering" aria-labelledby="title">
       <Banner imgUrl="/images/banner-3.jpg" text={tNS('title')}></Banner>
       <Container>
-        <h3>{tNS('title')}:</h3>
+        <h2 id="title">{tNS('title')}:</h2>
         <p>
           {tNS('info_1')}{' '}
           <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#112;&#105;&#108;&#118;&#105;&#108;&#105;&#110;&#110;&#097;&#110;&#108;&#101;&#105;&#112;&#111;&#109;&#111;&#046;&#102;&#105;">
@@ -29,6 +29,6 @@ export const OrderingAndDelivering = () => {
         <p>{tNS('info_5')}</p>
         <p>{tNS('info_6')}</p>
       </Container>
-    </div>
+    </section>
   );
 };

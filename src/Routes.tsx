@@ -7,7 +7,7 @@ import { OrderingAndDelivering } from './containers/OrderingAndDelivering';
 import { AppRoute } from './utils/route';
 
 export const AppRoutes = () => (
-  <div className="content">
+  <main>
     <Routes>
       <Route path={AppRoute.Home} element={<Home />} />
       <Route path={AppRoute.Contact} element={<Contact />} />
@@ -15,5 +15,5 @@ export const AppRoutes = () => (
       <Route path={AppRoute.Ordering} element={<OrderingAndDelivering />} />
       <Route path="*" element={<Navigate to={AppRoute.Home} />} />
     </Routes>
-  </div>
+  </main>
 );

@@ -1,7 +1,0 @@
-.App {
-  height: 100vh;
-}
-
-.navigation.sticky + .content {
-  padding-top: 85px;
-}

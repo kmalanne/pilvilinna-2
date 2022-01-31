@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import './index.css';
@@ -12,10 +13,16 @@ export interface ICarouselItemProps {
 const CarouselItem: React.FC<ICarouselItemProps> = (
   props: ICarouselItemProps
 ) => {
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'component' });
+
   const { author, text, visible = false } = props;
 
   return (
-    <div className={visible ? 'carousel-item visible' : 'carousel-item'}>
+    <div
+      aria-label={tNS('carousel_item')}
+      className={visible ? 'carousel-item visible' : 'carousel-item'}
+    >
       <FontAwesomeIcon icon={faUserCircle} size="4x" inverse></FontAwesomeIcon>
       <div className="testimonial">
         <p dangerouslySetInnerHTML={{ __html: text }}></p>
@@ -30,6 +37,9 @@ export interface ICarouselProps {
 }
 
 export const Carousel: React.FC<ICarouselProps> = (props: ICarouselProps) => {
+  const { t } = useTranslation();
+  const tNS = (key: string) => t(key, { ns: 'component' });
+
   const [current, setCurrent] = useState(0);
   const { items } = props;
 
@@ -50,7 +60,7 @@ export const Carousel: React.FC<ICarouselProps> = (props: ICarouselProps) => {
   };
 
   return (
-    <div className="carousel">
+    <div className="carousel" aria-label={tNS('carousel')}>
       {items.map((item, index) => {
         return (
           <CarouselItem
@@ -62,10 +72,22 @@ export const Carousel: React.FC<ICarouselProps> = (props: ICarouselProps) => {
         );
       })}
       <div className="carousel-action">
-        <div className="prev" onClick={onPrevClick}>
+        <div
+          role="button"
+          aria-label={tNS('previous_button')}
+          className="prev"
+          onClick={onPrevClick}
+          tabIndex={0}
+        >
           {'<'}
         </div>
-        <div className="next" onClick={onNextClick}>
+        <div
+          role="button"
+          aria-label={tNS('next_button')}
+          className="next"
+          onClick={onNextClick}
+          tabIndex={0}
+        >
           {'>'}
         </div>
       </div>

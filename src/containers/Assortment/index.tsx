@@ -77,10 +77,10 @@ export const Assortment = () => {
   const tNS = (key: string) => t(key, { ns: 'assortment' });
 
   return (
-    <div className="assortment">
+    <section className="assortment" aria-labelledby="title">
       <Banner imgUrl="/images/banner-1.jpg" text={tNS('banner')}></Banner>
       <Container>
-        <h3>{tNS('title')}</h3>
+        <h2 id="title">{tNS('title')}</h2>
         <div className="item-header">
           <p>
             {tNS('unique_cake_title')} <span>{tNS('price_from')} 70€</span>
@@ -236,8 +236,9 @@ export const Assortment = () => {
         </div>
       </Container>
       <Container className="gallery-container">
+        <h2 className="sr-only">Cake gallery</h2>
         <Gallery images={images}></Gallery>
       </Container>
-    </div>
+    </section>
   );
 };

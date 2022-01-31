@@ -1,7 +1,13 @@
 {
+  "logo": "Home of Pilvilinnan leipomo",
+
   "assortment": "Assortment and pricing",
   "blog": "Blog",
   "contact": "Contact",
   "home": "Home",
-  "ordering": "Terms of ordering and delivery"
+  "ordering": "Terms of ordering and delivery",
+
+  "social_navigation": "Social media navigation",
+  "facebook_link": "See Facebook page of Pilvilinnan leipomo",
+  "instagram_link": "See Instagram page of Pilvilinnan leipomo"
 }

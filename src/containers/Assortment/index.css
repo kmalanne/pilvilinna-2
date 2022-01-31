@@ -2,13 +2,8 @@
   padding: 90px;
 }
 
-.assortment h3 {
+.assortment h2 {
   margin-bottom: 20px;
-}
-
-.assortment h4 {
-  margin-bottom: 20px;
-  font-weight: bold;
 }
 
 .assortment .item-header {

@@ -1,7 +1,13 @@
 {
+  "logo": "Pilvilinnan leipomon logo",
+
   "assortment": "Valikoima ja hinnasto",
   "blog": "Blogi",
   "contact": "Ota yhteyttä",
   "home": "Etusivu",
-  "ordering": "Tilaus- ja toimitusehdot"
+  "ordering": "Tilaus- ja toimitusehdot",
+
+  "social_navigation": "Sosiaalisen median linkit",
+  "facebook_link": "Katso Pilvilinnan leipomon Facebook-sivu",
+  "instagram_link": "Katso Pilvilinnan leipomon Instagram-sivu"
 }
