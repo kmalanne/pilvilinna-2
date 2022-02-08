@@ -5,82 +5,27 @@ import { Banner } from '../../components/Banner';
 import { Gallery } from '../../components/Gallery';
 import './index.css';
 
-const images = [
-  {
-    previewURL: '/images/pilvilinnanleipomo-1.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-1.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-2.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-2.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-3.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-3.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-4.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-4.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-5.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-5.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-6.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-6.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-7.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-7.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-8.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-8.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-9.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-9.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-10.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-10.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-11.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-11.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-12.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-12.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-13.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-13.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-14.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-14.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-15.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-15.jpg',
-  },
-  {
-    previewURL: '/images/pilvilinnanleipomo-16.jpg',
-    thumbnailURL: '/images/pilvilinnanleipomo-16.jpg',
-  },
-];
+const getImages = () => {
+  let images = [];
+  for (let i = 1; i < 17; i++) {
+    images.push({
+      previewURL: `/images/gallery-${i}.jpg`,
+      thumbnailURL: `/images/gallery-thumbnail-${i}.jpg`,
+    });
+  }
+
+  return images;
+};
 
 export const Assortment = () => {
   const { t } = useTranslation();
   const tNS = (key: string) => t(key, { ns: 'assortment' });
 
   return (
-    <section className="assortment" aria-labelledby="title">
+    <section className="assortment" aria-labelledby="assortment-title">
       <Banner imgUrl="/images/banner-1.jpg" text={tNS('banner')}></Banner>
       <Container>
-        <h2 id="title">{tNS('title')}</h2>
+        <h2 id="assortment-title">{tNS('title')}</h2>
         <div className="item-header">
           <p>
             {tNS('unique_cake_title')} <span>{tNS('price_from')} 70€</span>
@@ -237,7 +182,7 @@ export const Assortment = () => {
       </Container>
       <Container className="gallery-container">
         <h2 className="sr-only">Cake gallery</h2>
-        <Gallery images={images}></Gallery>
+        <Gallery images={getImages()}></Gallery>
       </Container>
     </section>
   );
