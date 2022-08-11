@@ -28,19 +28,16 @@ export const Assortment = () => {
         <h2 id="assortment-title">{tNS('title')}</h2>
         <div className="item-header">
           <p>
-            {tNS('unique_cake_title')} <span>{tNS('price_from')} 70€</span>
+            {tNS('unique_cake_title')} <span>{tNS('price_from')} 85€</span>
           </p>
         </div>
         <p>{tNS('unique_cake_description_1')}</p>
         <ul>
           <li>
-            7-9 {tNS('person')} <strong>70,00€</strong>
+            10-12 {tNS('person')} <strong>85,00€</strong>
           </li>
           <li>
-            10-12 {tNS('person')} <strong>75,00€</strong>
-          </li>
-          <li>
-            18-20 {tNS('person')} <strong>100,00€</strong>
+            18-20 {tNS('person')} <strong>105,00€</strong>
           </li>
           <li>
             25-30 {tNS('person')} <strong>125,00€</strong>
@@ -56,24 +53,25 @@ export const Assortment = () => {
           <li>{tNS('unique_cake_choice_6')}</li>
           <li>{tNS('unique_cake_choice_7')}</li>
           <li>{tNS('unique_cake_choice_8')}</li>
+          <li>{tNS('unique_cake_choice_9')}</li>
         </ul>
         <div className="item-header">
           <p>
-            {tNS('mousse_cake_title')} <span>{tNS('price_from')} 50€</span>
+            {tNS('mousse_cake_title')} <span>{tNS('price_from')} 65€</span>
           </p>
         </div>
         <p>{tNS('mousse_cake_description')}</p>
         <ul>
           <li>
-            {tNS('circa')} 10 {tNS('person')} <strong>50,00€</strong>
+            {tNS('circa')} 10 {tNS('person')} <strong>65,00€</strong>
           </li>
           <li>
-            {tNS('circa')} 15 {tNS('person')} <strong>75,00€</strong>
+            {tNS('circa')} 15 {tNS('person')} <strong>80,00€</strong>
           </li>
         </ul>
         <div className="item-header">
           <p>
-            {tNS('chocolate_cake_title')} <span>65€</span>
+            {tNS('chocolate_cake_title')} <span>80€</span>
           </p>
         </div>
         <p>{tNS('chocolate_cake_description_1')}</p>
@@ -82,7 +80,7 @@ export const Assortment = () => {
         </p>
         <div className="item-header">
           <p>
-            {tNS('cupcake_title')} <span>45€</span>
+            {tNS('cupcake_title')} <span>50€</span>
           </p>
         </div>
         <p>
@@ -114,7 +112,7 @@ export const Assortment = () => {
         </ul>
         <div className="item-header">
           <p>
-            {tNS('cookie_title')} <span>1,20€/kpl</span>
+            {tNS('cookie_title')} <span>1,50€/kpl</span>
           </p>
         </div>
         <ul>
@@ -123,12 +121,10 @@ export const Assortment = () => {
         </ul>
         <div className="item-header">
           <p>
-            {tNS('macaron_title')} <span>1,50€/kpl</span>
+            {tNS('macaron_title')} <span>40€</span>
           </p>
         </div>
-        <p>
-          {tNS('macaron_description')} <strong>36€</strong>
-        </p>
+        <p>{tNS('macaron_description')}</p>
         <ul>
           <li>{tNS('macaron_choice_1')}</li>
           <li>{tNS('macaron_choice_2')}</li>
@@ -137,39 +133,39 @@ export const Assortment = () => {
           <li>{tNS('macaron_choice_5')}</li>
           <li>{tNS('macaron_choice_6')}</li>
           <li>{tNS('macaron_choice_7')}</li>
+          <li>{tNS('macaron_choice_8')}</li>
         </ul>
         <div className="item-header">
           <p>
-            {tNS('sandwich_cake_title')} <span>{tNS('price_from')} 100€</span>
+            {tNS('sandwich_cake_title')} <span>{tNS('price_from')} 105€</span>
           </p>
         </div>
         <p>{tNS('sandwich_cake_description')}</p>
         <ul>
           <li>
-            {tNS('sandwich_cake_choice_1')} <strong>100€</strong>
+            {tNS('sandwich_cake_choice_1')} <strong>105€</strong>
           </li>
           <li>
-            {tNS('sandwich_cake_choice_2')} <strong>100€</strong>
+            {tNS('sandwich_cake_choice_2')} <strong>105€</strong>
           </li>
           <li>
-            {tNS('sandwich_cake_choice_3')} <strong>100€</strong>
+            {tNS('sandwich_cake_choice_3')} <strong>105€</strong>
           </li>
           <li>
-            {tNS('sandwich_cake_choice_4')} <strong>110€</strong>
+            {tNS('sandwich_cake_choice_4')} <strong>120€</strong>
           </li>
           <li>
-            {tNS('sandwich_cake_choice_5')} <strong>110€</strong>
+            {tNS('sandwich_cake_choice_5')} <strong>120€</strong>
           </li>
           <li>
-            {tNS('sandwich_cake_choice_6')} <strong>100€</strong>
+            {tNS('sandwich_cake_choice_6')} <strong>105€</strong>
           </li>
         </ul>
         <div className="item-header">
           <p>{tNS('bread_title')}</p>
         </div>
         <p>
-          {tNS('bread_description')} <strong>7,00€</strong> {tNS('pcs')},{' '}
-          <strong>12,00€</strong> 2 {tNS('pcs')}
+          {tNS('bread_description')} <strong>9,00€</strong> {tNS('pcs')}
         </p>
         <div className="info-text-container">
           <p>
@@ -177,7 +173,6 @@ export const Assortment = () => {
           </p>
           <p>{tNS('info_2')}</p>
           <p>{tNS('info_3')}</p>
-          <p>{tNS('info_4')}</p>
         </div>
       </Container>
       <Container className="gallery-container">
