@@ -28,19 +28,19 @@ export const Assortment = () => {
         <h2 id="assortment-title">{tNS('title')}</h2>
         <div className="item-header">
           <p>
-            {tNS('unique_cake_title')} <span>{tNS('price_from')} 85€</span>
+            {tNS('unique_cake_title')} <span>{tNS('price_from')} 90€</span>
           </p>
         </div>
         <p>{tNS('unique_cake_description_1')}</p>
         <ul>
           <li>
-            10-12 {tNS('person')} <strong>85,00€</strong>
+            10-12 {tNS('person')} <strong>90,00€</strong>
           </li>
           <li>
-            18-20 {tNS('person')} <strong>105,00€</strong>
+            18-20 {tNS('person')} <strong>110,00€</strong>
           </li>
           <li>
-            25-30 {tNS('person')} <strong>125,00€</strong>
+            25-30 {tNS('person')} <strong>130,00€</strong>
           </li>
         </ul>
         <p>{tNS('unique_cake_description_2')}</p>
@@ -152,10 +152,10 @@ export const Assortment = () => {
             {tNS('sandwich_cake_choice_3')} <strong>105€</strong>
           </li>
           <li>
-            {tNS('sandwich_cake_choice_4')} <strong>120€</strong>
+            {tNS('sandwich_cake_choice_4')} <strong>115€</strong>
           </li>
           <li>
-            {tNS('sandwich_cake_choice_5')} <strong>120€</strong>
+            {tNS('sandwich_cake_choice_5')} <strong>115€</strong>
           </li>
           <li>
             {tNS('sandwich_cake_choice_6')} <strong>105€</strong>
