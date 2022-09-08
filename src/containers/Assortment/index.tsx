@@ -137,7 +137,7 @@ export const Assortment = () => {
         </ul>
         <div className="item-header">
           <p>
-            {tNS('sandwich_cake_title')} <span>{tNS('price_from')} 105€</span>
+            {tNS('sandwich_cake_title')} <span>{tNS('price_from')} 110€</span>
           </p>
         </div>
         <p>{tNS('sandwich_cake_description')}</p>
