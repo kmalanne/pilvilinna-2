@@ -65,8 +65,8 @@ export const Home = () => {
           <Col sm={12} md={4}>
             <ServiceItem
               icon={faCookie}
-              title={tNS('assortment_choice_2_title')}
-              text={tNS('assortment_choice_2_description')}
+              title={tNS('assortment_choice_3_title')}
+              text={tNS('assortment_choice_3_description')}
             ></ServiceItem>
           </Col>
         </Row>

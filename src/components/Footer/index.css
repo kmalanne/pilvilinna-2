@@ -7,6 +7,10 @@ footer .row .col-sm {
   text-align: center;
 }
 
+footer .row .col-sm p {
+  margin-bottom: 0px;
+}
+
 footer .row a {
   color: #454545;
   text-decoration: none;

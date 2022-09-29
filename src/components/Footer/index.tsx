@@ -28,6 +28,9 @@ export const Footer: React.FC = () => {
           <Col sm>
             <div className="col-header">{tNS('company')}:</div>
             <p>Pilvilinnan leipomo (2507048-6), Nokia</p>
+            <a href="https://www.oivahymy.fi/" target="_blank" rel="noreferrer">
+              oivahymy.fi
+            </a>
           </Col>
         </Row>
         <Row>
